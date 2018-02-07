@@ -16,7 +16,7 @@
 
 .jumbotron:after {
      content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
+     background: url("../images/testScreen.jpeg");
      opacity: 0.2;
      top: 0;
      left: 0;
@@ -37,9 +37,4 @@
      width: 146px;
      height: 146px;
      border-radius: 73px;
-}
-
-.footer {
-    position: relative;
-    right: 0;
 }
