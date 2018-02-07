@@ -3,4 +3,6 @@
  * GET home page.
  */
 
-exports.SimpleMessage = 'This is Help';
+exports.view = function(req, res){
+    res.render('help');
+};
