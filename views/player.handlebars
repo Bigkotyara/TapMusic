@@ -47,21 +47,14 @@
 				</div>
 
 				<div>
-					<i class="glyphicon glyphicon-step-backward"></i>&nbsp<i class="glyphicon glyphicon-play"></i>&nbsp<i class="glyphicon glyphicon-step-forward"></i>
+					<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-step-forward"></span></button>
 
 				</div>
-				<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+
+				<i class="glyphicon glyphicon-volume-off"></i>&nbsp<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>&nbsp<i class="glyphicon glyphicon-volume-up"></i>
 
 		</div>
 </div>
-
-
-
-
-
-
-
-
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

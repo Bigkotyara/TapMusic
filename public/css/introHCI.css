@@ -11,7 +11,7 @@
 
 .jumbotron {
 	height: 100%;
-	min-height: 100%; 
+	min-height: 100%;
 	position: relative;
 	margin-bottom: 0px;
 	background: none;
@@ -101,17 +101,10 @@
 		font-size: 1.5em;
 }
 
-<<<<<<< HEAD
 .glyphicon.glyphicon-step-forward {
-	font-size: 1.5em;
-}
-
-.glyphicon.glyphicon-step-backward {
 	font-size: 1.5em;
 }
 
 .song-nav p {
 	text-align: center;
 }
-=======
->>>>>>> 3b56056954488840a53dd45e704f736c6120a54b
