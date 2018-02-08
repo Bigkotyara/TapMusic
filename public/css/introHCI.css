@@ -17,7 +17,6 @@
 .jumbotron:after {
      content:"";
      background: url("../images/testScreen.jpeg");
-     opacity: 0.2;
      top: 0;
      left: 0;
      bottom: 0;
@@ -50,4 +49,3 @@
      flex-direction: row;
      justify-content: center;
      align-items: center;
-}
