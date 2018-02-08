@@ -20,14 +20,32 @@
 </head>
 
 <body>
-	<div class="container">
-        <div class="jumbotron">
-            <h1><a href="/"><span class="glyphicon glyphicon-chevron-left"></span>Home</a>{{category}}<span class="glyphicon glyphicon-list"></span></h1>
-        </div>
 
+<div class="topright">
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="glyphicon glyphicon-list"></span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <button class="dropdown-item" type="button">Filter</button>
+      <button class="dropdown-item" type="button">Help</button>
+    </div>
+  </div>
+</div>
+
+	<div class="container">
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="jumbotron">
+            <h1><a href="/"><span class="glyphicon glyphicon-chevron-left"></span>Home</a>{{category}}</h1>
+        </div>
+    </nav>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="jumbotron">
             <h1 align="left">Song Title&nbsp<i class="glyphicon glyphicon-play-circle"></i></h1>
         </div>
+    </nav>
+
 	</div>
 
 
