@@ -17,7 +17,6 @@
 .jumbotron:after {
      content:"";
      background: url("../images/testScreen.jpeg");
-     opacity: 0.35;
      top: 0;
      left: 0;
      bottom: 0;
@@ -32,21 +31,21 @@
 
 .project a {
      text-align: center;
-     display table-cell;
+     display: inline-flex;
      position: relative;
-     width: 146px;
-     height: 146px;
+     width: 100px;
+     height: 100px;
      border-radius: 73px;
+     margin: 5px;
 }
 
-.topright {
-    position: absolute;
-    top: 8px;
-    right: 16px;
+.container{
+     height: 100vh;
+     width: 100vw;
 }
 
-.topleft {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
+.project{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
