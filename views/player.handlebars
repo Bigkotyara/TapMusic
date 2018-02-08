@@ -21,17 +21,16 @@
 
 <body>
 
-<div class="topright">
-  <div class="btn-group">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <div class="dropdown show topright">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="glyphicon glyphicon-list"></span>
     </button>
-    <div class="dropdown-menu dropdown-menu-right">
-      <button class="dropdown-item" type="button">Filter</button>
-      <button class="dropdown-item" type="button">Help</button>
+    <div class="dropdown-menu dropdown-menu-right right-justified" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/filter/"><h1>Filter</h1></a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="/help/"><h1>Help</h1></a>
     </div>
   </div>
-</div>
 
 	<div class="container">
     <nav class="navbar fixed-top navbar-light bg-light">
