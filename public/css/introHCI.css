@@ -17,7 +17,7 @@
 .jumbotron:after {
      content:"";
      background: url("../images/testScreen.jpeg");
-     opacity: 0.35;
+     opacity: 0.2;
      top: 0;
      left: 0;
      bottom: 0;
@@ -69,3 +69,4 @@
     top: 8px;
     left: 16px;
 }
+
