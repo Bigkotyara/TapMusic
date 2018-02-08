@@ -13,6 +13,7 @@
 	position: relative;
 	background: none;
      margin: 0px;
+     text-align: center;
 }
 
 .jumbotron:after {
@@ -89,4 +90,6 @@
      min-width: 120px;
      background-color: #d7cfd2; 
 }
+
+
 
