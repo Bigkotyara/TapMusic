@@ -87,8 +87,10 @@
 
 .right-justified{
      position: relative;
-     min-width: 120px;
+     min-width: 100px;
      background-color: #d7cfd2; 
+     text-align: right;
+     padding-right: 10px;
 }
 
 
