@@ -13,6 +13,7 @@ var hello = require('./routes/hello');
 var project = require('./routes/project');
 var help = require('./routes/help');
 var filter = require('./routes/filter');
+var player = require('./routes/player');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +44,7 @@ app.get('/', index.view);
 app.get('/hello/:userName', hello.view);
 app.get('/help', help.view);
 app.get('/filter', filter.view);
+app.get('/player', player.view);
 app.get('/project/:name', project.viewProject);
 // Example route
 // app.get('/users', user.list);
