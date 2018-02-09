@@ -41,17 +41,24 @@
 
 		<div class="album-art-container" style="padding-bottom:100px">
 				<img class="img-responsive" src="http://www.firesidechatmusic.com/artwork/AlbumArt_Blank.jpg" alt="album art">
+<br>
+				<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      <span class="sr-only">70% Complete</span>
+    </div>
+  </div>
+
 				<div>
 					<p>Song Title</p>
 					<p>Performer</p>
 				</div>
 
-				<div>
+				<div class="media-buttons">
 					<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-step-forward"></span></button>
 
 				</div>
 
-				<i class="glyphicon glyphicon-volume-off"></i>&nbsp<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>&nbsp<i class="glyphicon glyphicon-volume-up"></i>
+				<i class="glyphicon glyphicon-volume-off">&nbsp<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>&nbsp<i class="glyphicon glyphicon-volume-up"></i>
 
 		</div>
 </div>
