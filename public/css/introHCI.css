@@ -101,7 +101,10 @@
 		font-size: 1.5em;
 }
 
-.glyphicon.glyphicon-step-forward {
+.glyphicon.glyphicon-pause {
+    font-size: 1.5em;
+}
+.glyphicon.glyphicon-forward {
 	font-size: 1.5em;
 }
 

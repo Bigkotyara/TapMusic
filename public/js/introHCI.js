@@ -10,4 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
+    
+    $('button.btn').click(function(e){
+                        $(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+                    });
 }
