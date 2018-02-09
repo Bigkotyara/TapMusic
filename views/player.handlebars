@@ -2,14 +2,14 @@
 
 <html>
 <head>
-	<title>TapMusic</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+    <title>TapMusic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/introHCI.css" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+    <!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,46 +26,46 @@
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="glyphicon glyphicon-list"></span>
     </button>
-    <div class="dropdown-menu dropdown-menu-right right-justified" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="/filter/"><h1>Filter</h1></a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="/help/"><h1>Help</h1></a>
-    </div>
+    <ul class="dropdown-menu dropdown-menu-right pull-right">
+        <li><a href="/filter/"><h4>Filters</h4></a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/help/"><h4>Help</h4></a></li>
+    </ul>
   </div>
 
-	<div class="jumbotron">
-		<a href="/" class="topleft"><span class="glyphicon glyphicon-chevron-left"></span>Home</a>
+    <div class="jumbotron">
+        <a href="/" class="topleft"><span class="glyphicon glyphicon-chevron-left"></span>Home</a>
 
     <nav class="navbar navbar-light bg-light">
             <h1>{{category}}</h1>
     </nav>
 
-		<div class="album-art-container" style="padding-bottom:100px">
-				<img class="img-responsive" src="http://www.firesidechatmusic.com/artwork/AlbumArt_Blank.jpg" alt="album art">
+        <div class="album-art-container" style="padding-bottom:100px">
+                <img class="img-responsive" src="http://www.firesidechatmusic.com/artwork/AlbumArt_Blank.jpg" alt="album art">
 <br>
-				<div class="progress">
+                <div class="progress">
     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
       <span class="sr-only">70% Complete</span>
     </div>
   </div>
 
-				<div>
-					<p>Song Title</p>
-					<p>Performer</p>
-				</div>
+                <div>
+                    <p>Song Title</p>
+                    <p>Performer</p>
+                </div>
 
-				<div class="media-buttons">
-					<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-forward"></span></button>
+                <div class="media-buttons">
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-forward"></span></button>
 
-				</div>
+                </div>
 
-				<div class="glyphicon glyphicon-volume-off"></div>&nbsp<input id="vol-control" type="range" min="0" max="100" step="1"></input>&nbsp<div class="glyphicon glyphicon-volume-up"></div>
+                <div class="glyphicon glyphicon-volume-off"></div>&nbsp<input id="vol-control" type="range" min="0" max="100" step="1"></input>&nbsp<div class="glyphicon glyphicon-volume-up"></div>
 
-		</div>
+        </div>
 </div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/introHCI.js"></script>
 </div>
 </body>
