@@ -4,7 +4,5 @@
  */
 
 exports.view = function(req, res){
-  res.render('index', {
-  	'name': '',
-  });
+  res.render('hello');
 };

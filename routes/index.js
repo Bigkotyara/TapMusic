@@ -6,36 +6,36 @@
 exports.view = function(req, res){
   res.render('index', {
     'projects1': [
-      { 'name': '😃Happy',
+      { 'name': '😃 Happy',
         'icon' : 'em em-smiley',
         'id': 'project1'
       },
-      { 'name': '😭Sad',
+      { 'name': '😭 Sad',
         'icon' : 'em em-cry',
         'id': 'project2'
       },
-      { 'name': '🧠Study',
+      { 'name': '🧠 Study',
         'icon' : 'em em-brain',
         'id': 'project3'
       }],
     'projects': [
-      { 'name': '💪Workout',
+      { 'name': '💪 Workout',
         'icon' : 'em em-muscle',
         'id': 'project4'
       },
-      { 'name': '🎲Chance',
+      { 'name': '🎲 Chance',
         'icon' : 'em em-game_die',
         'id': 'project5'
       }],
     'projects2': [
-      { 'name': '❤️Love',
+      { 'name': '❤️ Love',
         'icon' : 'em em-love_letter',
         'id': 'project6'
       },
-      { 'name': '😌Relax',
+      { 'name': '😌 Relax',
         'icon' : 'em em-relieved',
         'id': 'project7'
       }
-    ]  
+    ]
   });
 };
