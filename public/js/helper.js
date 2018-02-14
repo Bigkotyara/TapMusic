@@ -1,11 +1,10 @@
+'use strict';
 
-/*
- * GET home page.
- */
+// Call this function when the page loads (the "ready" event)
+$(document).ready(function() {
+  onload();
+})
 
-exports.view = function(req, res){
-    res.render('help');
-};
 
 function onload() {
   
