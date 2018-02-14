@@ -23,4 +23,9 @@ function onload() {
                                  e.preventDefault();
                                  });
   
+  $('#login-submit').click(function(e) {
+                                 window.location.href = "/";
+                                 e.preventDefault();
+                                 });
+  
   };
