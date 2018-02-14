@@ -1,5 +1,4 @@
-{
-  "songs": [
+[
     {
       "title": "Song1",
       "artist": "Artist1",
@@ -47,4 +46,3 @@
       ]
     }
   ]
-}
