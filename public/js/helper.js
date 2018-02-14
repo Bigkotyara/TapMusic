@@ -5,6 +5,8 @@ $(document).ready(function() {
   onload();
 })
 
+var user = "";
+var pass = "";
 
 function onload() {
   
@@ -13,6 +15,7 @@ function onload() {
                               $("#register-form").fadeOut(100);
                               $('#register-form-link').removeClass('active');
                               $(this).addClass('active');
+                              window.location.href = "/";
                               e.preventDefault();
                               });
   $('#register-form-link').click(function(e) {
@@ -20,12 +23,6 @@ function onload() {
                                  $("#login-form").fadeOut(100);
                                  $('#login-form-link').removeClass('active');
                                  $(this).addClass('active');
-                                 e.preventDefault();
-                                 });
-  
-  $('#login-submit').click(function(e) {
                                  window.location.href = "/";
                                  e.preventDefault();
                                  });
-  
-  };
