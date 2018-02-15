@@ -43,12 +43,26 @@
      bottom: 0px;
      position: absolute;
      width:100vw;
+     text-align: center;
 }
+
+.fixed-bottom:after {
+     content:"";
+     background: url("../images/testScreen.jpeg");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+}
+
 .fixed-top {
      margin-bottom: 5vh;
 }
 
-.project a {
+.project button {
      text-align: center;
      display: inline-flex;
      position: relative;
@@ -56,6 +70,11 @@
      height: 15vh;
      border-radius: 73px;
      margin: 5px;
+}
+
+#project2 button{
+    width: 20vh;
+    height: 20vh;
 }
 
 .container{
