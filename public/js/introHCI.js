@@ -91,9 +91,16 @@ function updateWheel(targetted, category){
 function swap(div1,div2){
         var htmlOne = $(div1).html();
         var htmlTwo = $(div2).html();
-        console.log(htmlOne);
-        $(div1).empty().html(htmlTwo);
-        $(div2).empty().html(htmlOne);
+        
+        $(div1).animate({opacity:0});
+		$(div2).animate({opacity:0}, function(){
+
+			$(div1).empty().html(htmlTwo);
+        	$(div2).empty().html(htmlOne);
+		});
+
+        $(div1).animate({opacity:1});
+		$(div2).animate({opacity:1});
 }
 
 function openNav() {
