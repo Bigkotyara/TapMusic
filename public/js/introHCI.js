@@ -38,10 +38,13 @@ function initializePage() {
         var parentdiv = document.getElementById($(e.target).closest('div').attr('id'));
         updateWheel(parentdiv, category);
     });
+
+    tagList = computeTags();
 }
 
 var current_category = "Sad";
 var current_song = 0;
+var tagList;
 
 function playNextSong() {
     var tag = current_category;
@@ -119,4 +122,18 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
     console.log("close overlay");
+}
+
+function computeTags(){
+    var tagList = [];
+    songs.forEach(function(element){
+
+        element.tags.forEach(function(tag){
+            if(!tagList.includes(tag)){
+                tagList.push(tag);
+            }
+        })
+    })
+    console.log(tagList);
+    return tagList;
 }
