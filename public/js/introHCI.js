@@ -73,6 +73,9 @@ function playNextSong() {
     $('#song-title').text(songs[ran].title);
     $('#song-title-ov').text(songs[ran].title);
     $('#song-artist-ov').text(songs[ran].artist);
+
+    // new art (random)
+    $('#album-art').attr("src","http://lorempixel.com/315/315/abstract/");
     return;
 }
 

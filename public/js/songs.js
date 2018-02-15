@@ -4,8 +4,8 @@ var songs = [
       "artist": "Artist1",
       "duration": "3:20",
       "tags": [
-        "happy",
-        "workout",
+        "Happy",
+        "Workout",
         "type",
         "git",
         "url",
@@ -31,17 +31,15 @@ var songs = [
       ]
     },
     {
-      "title": "Song3",
-      "artist": "Mumiy Band",
-      "duration": "4:20",
+      "title": "Delfiny",
+      "artist": "Mumiy Troll",
+      "duration": "4:24",
       "tags": [
         "type",
         "git",
         "url",
         "https",
-        "Workout",
         "Sad",
-        "Happy",
         "Study",
         "Relax",
         "Thinking",
@@ -57,7 +55,45 @@ var songs = [
         "git",
         "url",
         "https",
-        "workout"
+        "Workout",
+        "Angry"
+      ]
+    },
+    {
+      "title": "Sun of Nothing",
+      "artist": "Between the Buried and Me",
+      "duration": "10:58",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Workout",
+        "Angry",
+        "Mad",
+        "Heavy",
+        "Fast",
+        "Metal",
+        "Long"
+      ]
+    },
+    {
+      "title": "Supermassive Black Hole",
+      "artist": "Muse",
+      "duration": "3:32",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Workout",
+        "Love",
+        "Suffer",
+        "False",
+        "Pretences",
+        "Rock",
+        "Bass",
+        "2000s"
       ]
     }
   ];
