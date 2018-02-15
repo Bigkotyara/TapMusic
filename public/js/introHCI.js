@@ -34,7 +34,7 @@ function initializePage() {
     });
 
     $('.emoji-button').click(function(e){
-        var category = $(e.target).attr('id');
+        var category = $(e.target).find('.em-svg').addBack('.em-svg').attr('id');
         var parentdiv = document.getElementById($(e.target).closest('div').attr('id'));
         updateWheel(parentdiv, category);
     });
@@ -64,7 +64,7 @@ function playNextSong() {
         }
 
         counter++;
-        if(counter > 50){ //catch for infinte loop
+        if(counter > 100){ //catch for infinte loop
             alert("no new songs!");
             break;
         }
@@ -95,15 +95,20 @@ function swap(div1,div2){
         var htmlOne = $(div1).html();
         var htmlTwo = $(div2).html();
         
-        $(div1).animate({opacity:0});
-		$(div2).animate({opacity:0}, function(){
+        if(div1 != div2){
+            $(div1).animate({opacity:0},'fast');
+        }
+		$(div2).animate({opacity:0},'fast'); 
 
-			$(div1).empty().html(htmlTwo);
-        	$(div2).empty().html(htmlOne);
-		});
+        if(div1 != div2){
+		    $(div1).empty().html(htmlTwo);
+            $(div2).empty().html(htmlOne);
+        }
 
-        $(div1).animate({opacity:1});
-		$(div2).animate({opacity:1});
+        if(div1 != div2){
+            $(div1).animate({opacity:1},'fast');
+        }
+		$(div2).animate({opacity:1},'fast');
 }
 
 function openNav() {
