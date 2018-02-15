@@ -14,6 +14,7 @@ var project = require('./routes/project');
 var help = require('./routes/help');
 var filter = require('./routes/filter');
 var player = require('./routes/player');
+var tutorial = require('./routes/tutorial');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/hello', hello.view);
 app.get('/help', help.view);
 app.get('/filter', filter.view);
 app.get('/player/:name', player.view);
+app.get('/tutorial', tutorial.view);
 // Example route
 // app.get('/users', user.list);
 
