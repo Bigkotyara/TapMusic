@@ -5,6 +5,8 @@ $(document).ready(function() {
   onload();
 })
 
+var user = "";
+var pass = "";
 
 function onload() {
   
@@ -22,5 +24,16 @@ function onload() {
                                  $(this).addClass('active');
                                  e.preventDefault();
                                  });
+  
+  $('#login-submit').click(function(e) {
+                                 window.location.href = "/";
+                                 e.preventDefault();
+                                 });
+                                 
+  $('#register-submit').click(function(e) {
+                                 window.location.href = "/";
+                                 e.preventDefault();
+                                 });
+                                 
   
   };
