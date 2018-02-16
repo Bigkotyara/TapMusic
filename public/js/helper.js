@@ -39,7 +39,7 @@ function onload() {
   };
 
 
-var modal = document.getElementById('id01');
+var modal = document.getElementById('login-pop');
 
 window.onclick = function(event) {
     if (event.target == modal) {

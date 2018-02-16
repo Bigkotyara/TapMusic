@@ -5,11 +5,7 @@ var songs = [
       "duration": "3:20",
       "tags": [
         "Happy",
-        "Workout",
-        "type",
-        "git",
-        "url",
-        "https"
+        "Workout"
       ]
     },
     {

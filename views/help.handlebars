@@ -18,15 +18,14 @@
    </head>
    <body>
       <!--<div class="container"> </div>-->
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-   <form class="modal-content animate" action="/action_page.php">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-     <!-- <div class="container">-->
-         <div class="row">
+      <button onclick="document.getElementById('login-pop').style.display='block'" style="width:auto;">Login</button>
+      <div id="login-pop" class="modal">
+         <!--<form class="modal-content animate" action="/action_page.php">-->
+         <!-- <div class="container">-->
+         <div class="row animate">
             <div class="col-md-6 col-md-offset-3">
                <div class="panel panel-login">
+                  <span onclick="document.getElementById('login-pop').style.display='none'" class="close" title="Close Modal">&times;</span>
                   <div class="panel-heading">
                      <div class="row">
                         <div class="col-xs-6">
@@ -70,8 +69,8 @@
                                  </div>
                               </div>
                            </form>
-                          <!-- <form id="register-form" method="post" role="form" style="display: none;"> -->
-                          <form id="register-form" role="form" style="display: none;">
+                           <!-- <form id="register-form" method="post" role="form" style="display: none;"> -->
+                           <form id="register-form" role="form" style="display: none;">
                               <div class="form-group">
                                  <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                               </div>
@@ -98,9 +97,9 @@
                </div>
             </div>
          </div>
-      <!--</div>-->
-        </form>
-</div>
+         <!--</div>-->
+         <!-- </form>-->
+      </div>
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="/js/bootstrap.min.js"></script>
       <script src="/js/helper.js"></script>
