@@ -39,7 +39,6 @@ function initializePage() {
         updateWheel(parentdiv, category);
     });
 
-    tagList = computeTags();
 }
 
 var current_category = "Sad";
