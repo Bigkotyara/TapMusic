@@ -350,7 +350,7 @@ var songs = [
     {
       "title": "XO TOUR Llif3",
       "artist": "Lil Uzi Vert",
-      "duration": "3:02"
+      "duration": "3:02",
       "tags": [
         "type",
         "git",
