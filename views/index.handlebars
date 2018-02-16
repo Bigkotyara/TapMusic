@@ -22,13 +22,12 @@
 
 <body>
   <div class="container">
-  <nav class="navbar fixed-top navbar-light bg-light">
-          <div class="jumbotron">
-                  <h1 align="center"><strong>TapMusic</strong>&nbsp</h1>
-                  <h3><a class="topright" href="tutorial/"><span class="glyphicon glyphicon-info-sign"></span></a></h3>
-          </div>
-  </nav>
+  <nav class="topnav">
 
+                  <h3 align="center">TapMusic</h3>
+                  <h3><a class="topright" href="tutorial/"><span class="glyphicon glyphicon-info-sign"></span></a></h3>
+  </nav>
+	<br>
         <div class="project">
           {{#each projects}}
               <div id={{id}} class="emoji-button">
@@ -75,7 +74,7 @@
     <ul class="dropdown-menu dropdown-menu-right pull-right">
         <li><a onclick="document.getElementById('login-pop').style.display='block'" style="width:auto;"><h4>Filters</h4></a></li>
         <li role="separator" class="divider"></li>
-        <li><a href="/help/"><h4>Help</h4></a></li>
+        <li><a href="/tutorial/"><h4>Help</h4></a></li>
     </ul>
   </div>
 
