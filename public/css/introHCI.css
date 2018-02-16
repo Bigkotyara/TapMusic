@@ -90,6 +90,10 @@
      margin: 5px;
 }
 
+#song-down{
+    font-size: 16px;
+}
+
 .faded{
      opacity: 0;
 }
