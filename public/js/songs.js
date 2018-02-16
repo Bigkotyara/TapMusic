@@ -333,7 +333,7 @@ var songs = [
     {
       "title": "Plain Jane",
       "artist": "A$AP Ferg",
-      "duration": "2:54"
+      "duration": "2:54",
       "tags": [
         "type",
         "git",
