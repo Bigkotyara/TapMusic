@@ -225,7 +225,7 @@ var songs = [
         "Study",
         "1700s"
       ]
-    }
+    },
     {
       "title": "Skateboard P",
       "artist": "MadeinTYO",
