@@ -1,8 +1,16 @@
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $("hidden").hide();
+$(document).ready(function() {
+	initializePage();
+  $("#div2, #div3").hide();
+    $("#moodbutton").on("click", function(){
+        $("#div1, #div2").toggle();
     });
-    $("#show").click(function(){
-        $("h2#hidden").show();
-    });
+
 });
+
+function initializePage() {
+	$("#nextbutton").on("click", function(){
+			$("#div2").hide();
+			$("#div3").show();
+	});
+
+}

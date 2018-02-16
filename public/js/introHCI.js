@@ -12,7 +12,7 @@ $(document).ready(function() {
 function initializePage() {
 
 	// add any functionality and listeners you want here
-    
+
     $('button.btn.btn-default').click(function(e){
                         $(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
                     });
@@ -97,11 +97,11 @@ function updateWheel(targetted, category){
 function swap(div1,div2){
         var htmlOne = $(div1).html();
         var htmlTwo = $(div2).html();
-        
+
         if(div1 != div2){
             $(div1).animate({opacity:0},'fast');
         }
-		$(div2).animate({opacity:0},'fast'); 
+		$(div2).animate({opacity:0},'fast');
 
         if(div1 != div2){
 		    $(div1).empty().html(htmlTwo);
