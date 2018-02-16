@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="/css/introHCI.css" rel="stylesheet">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link href="/css/login.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,20 +30,20 @@
 
   <div id="moodbutton" class="project">
 
-    <a id="show" class="em-svg em-smiley">
+    <a id="show" class="em-svg em-smiley" style="width:100px;height:100px;">
     </a>
 
-    <a id="show" class="em-svg em-cry">
+    <a id="show" class="em-svg em-cry" style="width:100px;height:100px;">
     </a>
 
-    <a class="em-svg em-books">
+    <a class="em-svg em-books" style="width:100px;height:100px;">
     </a>
   </div>
 </div>
 <h2 id="div1" align="center">Tap a mood icon to begin...</h2>
 
 <div id="div2" align="center">
-  <a class="em-svg em-smiley">
+  <a class="em-svg em-smiley" style="width:100px;height:100px;">
   </a>
   <h2>Music matching your mood will begin to play!</h2>
   <div  align="center">
@@ -52,9 +52,31 @@
 </div>
 
 <div id="div3" align="center">
-  <a class="em-svg em-smiley">
-  </a>
-  <h2>You most recent icon will be at the center!</h2>
+  <div class="project">
+    {{#each projects}}
+        <div id={{id}} class="emoji-button">
+          <button class="{{icon}}" id="{{name}}">
+          </button>
+        </div>
+   {{/each}}
+  </div>
+  <div class="project">
+    {{#each projects1}}
+        <div id={{id}} class="emoji-button">
+          <button class="{{icon}}" id="{{name}}">
+          </button>
+        </div>
+   {{/each}}
+  </div>
+  <div class="project">
+    {{#each projects2}}
+        <div id={{id}} class="emoji-button">
+          <button class="{{icon}}" id="{{name}}">
+          </button>
+        </div>
+   {{/each}}
+  </div>
+  <h4>You most recent icon will be at the center!</h4>
   <div align="center">
     <br>
     <a href="/"><button type="button" class="btn btn-success btn-lg">Let's Go!</button></a>
@@ -152,10 +174,12 @@
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/introHCI.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/helper.js"></script>
+<script src="/js/introHCI.js"></script>
 <script src="/js/tutorial.js"></script>
+
 </div>
 
 </body>
