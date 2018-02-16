@@ -1,29 +1,32 @@
 var songs = [
     {
-      "title": "Song1",
-      "artist": "Artist1",
-      "duration": "3:20",
+      "title": "Such Small Hands",
+      "artist": "La Dispute",
+      "duration": "1:35",
       "tags": [
-        "Happy",
-        "Workout"
+        "Sad",
+        "Slow",
+        "Build-up",
+        "Emo",
+        "Poetry",
+        "Spoken-word"
       ]
     },
     {
-      "title": "Song2",
-      "artist": "Mozart",
-      "duration": "3:20",
+      "title": "Palms Read",
+      "artist": "Protest the Hero",
+      "duration": "5:06",
       "tags": [
-        "type",
-        "git",
-        "url",
-        "https",
         "Workout",
-        "Sad",
         "Happy",
-        "Study",
-        "Relax",
-        "Thinking",
-        "Love"
+        "Fast",
+        "Metal",
+        "Guitar",
+        "Canadian",
+        "Virtuosic",
+        "Skillful",
+        "Prog",
+        "Speed"
       ]
     },
     {
@@ -31,10 +34,6 @@ var songs = [
       "artist": "Mumiy Troll",
       "duration": "4:24",
       "tags": [
-        "type",
-        "git",
-        "url",
-        "https",
         "Sad",
         "Study",
         "Relax",
@@ -43,16 +42,15 @@ var songs = [
       ]
     },
     {
-      "title": "Song4",
-      "artist": "Yelling band",
-      "duration": "3:20",
+      "title": "Buffalo",
+      "artist": "Dance Gavin Dance",
+      "duration": "2:10",
       "tags": [
-        "type",
-        "git",
-        "url",
-        "https",
         "Workout",
-        "Angry"
+        "Angry",
+        "Fast",
+        "Screaming",
+        "Post-hardcore"
       ]
     },
     {
@@ -60,17 +58,14 @@ var songs = [
       "artist": "Between the Buried and Me",
       "duration": "10:58",
       "tags": [
-        "type",
-        "git",
-        "url",
-        "https",
         "Workout",
         "Angry",
         "Mad",
         "Heavy",
         "Fast",
         "Metal",
-        "Long"
+        "Long",
+        "Screaming"
       ]
     },
     {
@@ -78,10 +73,6 @@ var songs = [
       "artist": "Muse",
       "duration": "3:32",
       "tags": [
-        "type",
-        "git",
-        "url",
-        "https",
         "Workout",
         "Love",
         "Suffer",
@@ -89,7 +80,150 @@ var songs = [
         "Pretences",
         "Rock",
         "Bass",
+        "2000s",
+        "Lyrics",
+        "Vocals"
+      ]
+    },
+    {
+      "title": "Empire Ants",
+      "artist": "Gorillaz",
+      "duration": "4:43",
+      "tags": [
+        "Melancholy",
+        "Sad",
+        "Relax",
+        "Study",
+        "Electronic",
+        "British",
+        "2000s",
+        "Lyrics",
+        "Vocals"
+      ]
+    },
+    {
+      "title": "Quintessence",
+      "artist": "Benjamin Clementine",
+      "duration": "3:37",
+      "tags": [
+        "Poetry",
+        "Piano",
+        "Slow",
+        "British",
+        "Relax",
+        "Study",
+        "Sad",
+        "2010s",
+        "Lyrics",
+        "Vocals"
+      ]
+    },
+    {
+      "title": "Inverness",
+      "artist": "Jed Kurzel",
+      "duration": "2:09",
+      "tags": [
+        "Sad",
+        "Slow",
+        "Instrumental",
+        "Soundtrack",
         "2000s"
+      ]
+    },
+    {
+      "title": "Entertainment",
+      "artist": "Phoenix",
+      "duration": "3:40",
+      "tags": [
+        "Pop",
+        "Happy",
+        "Up-beat",
+        "Lyrics",
+        "Vocals",
+        "Rock",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrel",
+      "duration": "3:32",
+      "tags": [
+        "Workout",
+        "Love",
+        "Happy",
+        "Up-beat",
+        "Overrated",
+        "Pop",
+        "2000s"
+      ]
+    },
+    {
+      "title": "The Rift",
+      "artist": "Rainbowdragoneyes",
+      "duration": "2:21",
+      "tags": [
+        "Workout",
+        "Chiptune",
+        "Metal",
+        "Gameboy",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Magnolia",
+      "artist": "Playboi Carti",
+      "duration": "3:01",
+      "tags": [
+        "Slow",
+        "Meme",
+        "Rap",
+        "Lyrics",
+        "Explicit",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Fall in Love",
+      "artist": "Phantogram",
+      "duration": "3:05",
+      "tags": [
+        "Slow",
+        "Alternative",
+        "Love",
+        "Lyrics",
+        "Electronic",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Soul Meets Body",
+      "artist": "Death Cab for Cutie",
+      "duration": "3:49",
+      "tags": [
+        "Rock",
+        "Alternative",
+        "Love",
+        "Lyrics",
+        "Vocals",
+        "Happy",
+        "Relax",
+        "Study",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Piano Sonata in B Minor",
+      "artist": "Franz Joseph Hadyn",
+      "duration": "3:33",
+      "tags": [
+        "Classical",
+        "Instrumental",
+        "Piano",
+        "Sonata",
+        "Relax",
+        "Study",
+        "1700s"
       ]
     }
   ];
