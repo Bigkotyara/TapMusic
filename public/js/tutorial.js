@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	initializePage();
   $("#div2, #div3").hide();
-    $("#preview").on("click", function(){
+    $("#moodbutton").on("click", function(){
         $("#div1, #div2").toggle();
     });
 
