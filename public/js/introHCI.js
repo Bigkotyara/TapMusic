@@ -45,6 +45,7 @@ function initializePage() {
 var current_category = "Sad";
 var current_song = 0;
 var tagList;
+var ignoreList= [];
 
 function playNextSong() {
     var tag = current_category;

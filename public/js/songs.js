@@ -225,5 +225,18 @@ var songs = [
         "Study",
         "1700s"
       ]
+    },
+    {
+      "title": "Happy Up Here",
+      "artist": "Royksopp",
+      "duration": "2:43",
+      "tags": [
+        "Eletronic",
+        "Vocals",
+        "Happy",
+        "Up-beat",
+        "Relax",
+        "Study"
+      ]
     }
   ];

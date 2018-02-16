@@ -35,5 +35,7 @@ $('#add-tag').click(function(e) {
   var t = document.getElementById("tags");
         //alert('You pressed enter! ' + t.value);
         //$("<p>Test"+$('#tags').val()+"</p>").insertAfter($('.login-form'));
-        $("#tags-stored li").add("<span class'label success'>$('#tags').val()</span>");
+        ignoreList.push($('#tags').val());
+        console.log(ignoreList);
+        $("#tags-stored").append("<p>"+$('#tags').val()+"</p>");
 });
