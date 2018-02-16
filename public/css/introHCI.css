@@ -80,6 +80,16 @@
      transition: opacity 1s ease-in-out;
 }
 
+.project .tut-em {
+     text-align: center;
+     display: inline-flex;
+     position: relative;
+     width: 15vh;
+     height: 15vh;
+     border-radius: 73px;
+     margin: 5px;
+}
+
 .faded{
      opacity: 0;
 }
