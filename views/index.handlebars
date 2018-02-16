@@ -8,7 +8,8 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link href="/css/login.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -71,7 +72,7 @@
       <span class="glyphicon glyphicon-list"></span>
     </button>
     <ul class="dropdown-menu dropdown-menu-right pull-right">
-        <li><a href="/filter/"><h4>Filters</h4></a></li>
+        <li><a onclick="document.getElementById('login-pop').style.display='block'" style="width:auto;"><h4>Filters</h4></a></li>
         <li role="separator" class="divider"></li>
         <li><a href="/help/"><h4>Help</h4></a></li>
     </ul>
@@ -112,12 +113,68 @@
   </div>
 </div>
 
+      <div id="login-pop" class="modal">
+         <!--<form class="modal-content animate" action="/action_page.php">-->
+         <!-- <div class="container">-->
+         <div class="row animate">
+            <div class="col-md-6 col-md-offset-3">
+               <div class="panel panel-login">
+                  <span onclick="document.getElementById('login-pop').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <div class="panel-heading">
+                     <div class="row">
+
+                           <a href="#" class="active" id="filter-form-link">Filter</a>
+
+                     </div>
+                     <hr>
+                  </div>
+                  <div class="panel-body">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <!-- <form id="login-form" method="post" role="form" style="display: block;"> -->
+                           <form id="login-form" role="form" style="display: block;">
+                              <div class="form-group">
+                              <div class="ui-widget">
+                                  <!--<label for="tags">Tags: </label>-->
+                                  <input id="tags" type="text" name="tag" tabindex="1" class="form-control" placeholder="Tag">
+                                  <a href="#" id="add-tag">Add</a>
+                                  <p>*Use up and down arrows to autocomplete<p>
+                              </div>
+                              <ul id="tags-stored">
+                                <li></li>
+                                </ul>
+                              </div>
+                              <div class="form-group text-center">
+                                 <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                 <label for="remember"> Remember My Preferences</label>
+                              </div>
+                              <div class="form-group">
+                                 <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                       <input type="submit" name="done-submit" id="done-submit" tabindex="4" class="form-control btn btn-login" value="Done">
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <!-- <form id="register-form" method="post" role="form" style="display: none;"> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--</div>-->
+         <!-- </form>-->
+      </div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
   <script src="/js/introHCI.js"></script>
   <script src="/js/songs.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="/js/tags.js"></script>
+  <script src="/js/tagger.js"></script>
 
 </div>
 
