@@ -103,6 +103,7 @@ function playNextSong() {
 
     // new art (random)
     $('#album-art').attr("src","http://lorempixel.com/315/315/abstract/");
+    $('#category_header').html(current_category);
     return;
 }
 
