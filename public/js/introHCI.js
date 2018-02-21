@@ -25,7 +25,7 @@ function initializePage() {
             //$(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
             play();
             playing = true;
-        }                                      
+        }
                     });
 
     $('#next-button, #next-button-ov').click(function(e){
@@ -55,6 +55,15 @@ function initializePage() {
     });
 
     audioElement.addEventListener('ended', playNextSong(), false);
+
+		window.SetVolume = function(val)
+		{
+		    var player = audioElement;
+		    console.log('Before: ' + player.volume);
+		    player.volume = val / 100;
+		    console.log('After: ' + player.volume);
+		}
+
 }
 
 var current_category = "Sad";
@@ -99,7 +108,7 @@ function playNextSong() {
         audioElement.setAttribute('src', '');
         pause();
     }
-    
+
 
     // new art (random)
     $('#album-art').attr("src","http://lorempixel.com/315/315/abstract/");
@@ -124,7 +133,7 @@ function play() {
         $('#play-button').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
         $('#play-button-ov').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
         playing = true;
-    }    
+    }
     audioElement.play();
     console.log("Playing...");
 }

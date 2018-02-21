@@ -1,38 +1,34 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
-}
+body {
+ background-color: #7D67A1;
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
-	color: #CC00AA;
 }
-
 .jumbotron {
 	height: 100%;
 	min-height: 100%;
 	position: relative;
 	margin-bottom: 0px;
 	background: none;
-     margin: 0px;
-     text-align: center;
+  margin: 0px;
+  text-align: center;
 }
 
 .jumbotron:after {
      content:"";
+		 height: 100%;
+	 	 min-height: 100%;
      background: url("../images/testScreen.jpeg");
-     opacity: 0.2;
+     opacity: 0.7;
      top: 0;
      left: 0;
      bottom: 0;
      right: 0;
-     position: absolute;
+     position: relative;
      z-index: -1;
 }
 
-.jumbotron p {
-     color: #6e6e6e;
+#jumbo {
+	margin-bottom: 0px;
+  margin-top: : 0px;
 }
 
 .navbar {
@@ -165,7 +161,6 @@
     font-size: 3em;
 }
 
-
 .song-nav p {
 	text-align: center;
 }
@@ -189,11 +184,11 @@
 
 .overlay-content {
     position: relative;
-    top: 0%;
+    height: 100%;
     width: 100%;
     text-align: center;
     margin-top: 0px;
-    background-color: rgba(105,105,105,0.6);
+    background-color: #6F5697;
 }
 
 .overlay a {
@@ -228,14 +223,14 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #6F5697;
     overflow: hidden;
 		color: #FFFFFF;
 		text-align: center;
 }
 /* Add a black background color to the bottom navigation */
 .botnav {
-    background-color: #333;
+    background-color: #6F5697;
     overflow: hidden;
 		color: #FFFFFF;
 		text-align: center;
@@ -262,4 +257,25 @@
     padding: 8px;
     font-family: Arial;
 }
-.success {background-color: #4CAF50;}
+.success {
+	background-color: #4CAF50;
+}
+
+.resize {
+	max-width:100%; /* you can use % */
+	height: auto;
+}
+
+.media-button {
+    background-color: inherit;
+    border: 2px solid #FFFFFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+		border-radius: 50%;
+}
