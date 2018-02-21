@@ -6,6 +6,9 @@ $(document).ready(function() {
 
 });
 
+var audioElement = document.createElement('audio');
+var playing = false;
+var currDuration = 0;
 /*
  * Function that is called when the document is ready.
  */
@@ -13,15 +16,19 @@ function initializePage() {
 
 	// add any functionality and listeners you want here
 
-    $('button.btn.btn-default').click(function(e){
-                        $(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+    $('#play-button, #play-button-ov').click(function(e){
+        if (playing) {
+            //$(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+            pause();
+            playing = false;
+        } else {
+            //$(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+            play();
+            playing = true;
+        }                                      
                     });
 
-    $('#next-button').click(function(e){
-                        playNextSong();
-                    });
-
-    $('#next-button-ov').click(function(e){
+    $('#next-button, #next-button-ov').click(function(e){
                         playNextSong();
                     });
 
@@ -39,6 +46,15 @@ function initializePage() {
         updateWheel(parentdiv, category);
     });
 
+    audioElement.addEventListener("timeupdate",function(){
+        $("#length").attr('style', "width:" + (audioElement.currentTime/currDuration)*100 + "%");
+    });
+
+    audioElement.addEventListener("canplay",function(){
+        currDuration = audioElement.duration;
+    });
+
+    audioElement.addEventListener('ended', playNextSong(), false);
 }
 
 var current_category = "Sad";
@@ -76,6 +92,14 @@ function playNextSong() {
     $('#song-title').text(songs[ran].title);
     $('#song-title-ov').text(songs[ran].title);
     $('#song-artist-ov').text(songs[ran].artist);
+    if (songs[ran].source) {
+        audioElement.setAttribute('src', songs[ran].source);
+        play();
+    } else {
+        audioElement.setAttribute('src', '');
+        pause();
+    }
+    
 
     // new art (random)
     $('#album-art').attr("src","http://lorempixel.com/315/315/abstract/");
@@ -92,6 +116,26 @@ function updateWheel(targetted, category){
     var middle = document.getElementById("project2");
     swap(targetted,middle);
 
+}
+
+function play() {
+    if (!playing) {
+        $('#play-button').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+        $('#play-button-ov').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+        playing = true;
+    }    
+    audioElement.play();
+    console.log("Playing...");
+}
+
+function pause() {
+    if (playing) {
+        $('#play-button').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+        $('#play-button-ov').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+        playing = false;
+    }
+    audioElement.pause();
+    console.log("Stopped...");
 }
 
 function swap(div1,div2){

@@ -131,6 +131,32 @@ var songs = [
       ]
     },
     {
+      "title": "Piano Moment",
+      "artist": "Bensound",
+      "duration": "1:50",
+      "source": "https://www.bensound.com/bensound-music/bensound-pianomoment.mp3",
+      "tags": [
+        "Sad",
+        "Slow",
+        "Piano",
+        "Peaceful",
+        "Love"
+      ]
+    },
+    {
+      "title": "Better Days",
+      "artist": "Bensound",
+      "duration": "2:33",
+      "source": "https://www.bensound.com/bensound-music/bensound-betterdays.mp3",
+      "tags": [
+        "Sad",
+        "Slow",
+        "Soundtrack",
+        "Guitar",
+        "Dramatic"
+      ]
+    },
+    {
       "title": "Entertainment",
       "artist": "Phoenix",
       "duration": "3:40",
@@ -397,6 +423,24 @@ var songs = [
       ]
     },
     {
+      "title": "Tomorrow",
+      "artist": "Bensound",
+      "duration": "4:54",
+      "source": "https://www.bensound.com/bensound-music/bensound-tomorrow.mp3",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Relax",
+        "Love",
+        "Slow",
+        "Lonely",
+        "Sad",
+        "Guitar"
+      ]
+    },
+    {
       "title": "MIC Drop",
       "artist": "BTS",
       "duration": "3:58",
@@ -411,6 +455,70 @@ var songs = [
         "Fast",
         "K-Pop",
         "2010s"
+      ]
+    },
+    {
+      "title": "Happy Rock",
+      "artist": "Bensound",
+      "duration": "1:45",
+      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Workout",
+        "Party",
+        "Happy",
+        "Fast"
+      ]
+    },
+    {
+      "title": "Jazzy Frenchy",
+      "artist": "Bensound",
+      "duration": "1:44",
+      "source": "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Workout",
+        "Party",
+        "Happy",
+        "Fast"
+      ]
+    },
+    {
+      "title": "Little Idea",
+      "artist": "Bensound",
+      "duration": "2:49",
+      "source": "https://www.bensound.com/bensound-music/bensound-littleidea.mp3",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Workout",
+        "Party",
+        "Happy",
+        "Fast"
+      ]
+    },
+    {
+      "title": "Brazil Samba",
+      "artist": "Bensound",
+      "duration": "4:00",
+      "source": "https://www.bensound.com/bensound-music/bensound-brazilsamba.mp3",
+      "tags": [
+        "type",
+        "git",
+        "url",
+        "https",
+        "Workout",
+        "Party",
+        "Happy",
+        "Fast"
       ]
     },
     {

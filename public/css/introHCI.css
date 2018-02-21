@@ -103,6 +103,10 @@
     height: 20vh;
 }
 
+.btn.btn-default.btn-lg{
+    margin-bottom: 5vh;
+}
+
 .container{
      margin: 0px;
      padding: 0px;
@@ -153,6 +157,15 @@
 	font-size: 1.5em;
 }
 
+.glyphicon.glyphicon-chevron-up {
+    font-size: 3em;
+}
+
+.glyphicon.glyphicon-chevron-down {
+    font-size: 3em;
+}
+
+
 .song-nav p {
 	text-align: center;
 }
@@ -176,6 +189,7 @@
     width: 100%;
     text-align: center;
     margin-top: 0px;
+    background-color: rgba(105,105,105,0.6);
 }
 
 .overlay a {
@@ -194,8 +208,8 @@
 
 .overlay .closebtn {
     top: 5px;
-    font-size: 12px;
     text-align: center;
+    color: white;
 }
 
 @media screen and (max-height: 450px) {

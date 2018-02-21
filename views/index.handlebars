@@ -55,7 +55,8 @@
 <div class="botnav">
         <div>
             <span id="song-up" class="glyphicon glyphicon-chevron-up"></span>
-            <h2 id="song-title">Tap an Icon to Begin&nbsp</h2><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button id="next-button" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-forward"></span></button>
+            <h2 id="song-title">Tap an Icon to Begin&nbsp</h2>
+            <button id="play-button" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button id="next-button" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-forward"></span></button>
         </div>
   </div>
 
@@ -65,7 +66,8 @@
 <div id="myNav" class="overlay">
   
   <div class="overlay-content">
-  <span id="song-down" class="glyphicon glyphicon-chevron-down closebtn"></span>
+  <!-- <span id="song-down" class="glyphicon glyphicon-chevron-down closebtn"></span> -->
+  <span id="song-down" class="closebtn"><span class="glyphicon glyphicon-chevron-down" ></span></span>
 
   <div class="dropdown show topright">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,18 +89,18 @@
                 <img id="album-art" class="img-responsive" src="http://www.firesidechatmusic.com/artwork/AlbumArt_Blank.jpg" alt="album art">
 <br>
                 <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-      <span class="sr-only">70% Complete</span>
+    <div id="length" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+      <span class="sr-only"></span>
     </div>
   </div>
 
                 <div>
-                    <p id='song-title-ov'>Song Title</p>
-                    <p id='song-artist-ov'>&nbsp</p>
+                    <p id='song-title-ov' style="color: white">Song Title</p>
+                    <p id='song-artist-ov' style="color: white">&nbsp</p>
                 </div>
 
                 <div class="media-buttons">
-                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button id="next-button-ov" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-forward"></span></button>
+                    <button id="play-button-ov" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-play"></span></button>&nbsp<button id="next-button-ov" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-forward"></span></button>
 
                 </div>
 
