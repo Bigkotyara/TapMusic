@@ -9,6 +9,13 @@ $(document).ready(function() {
 var audioElement = document.createElement('audio');
 var playing = false;
 var currDuration = 0;
+
+
+var current_category = "Sad";
+var current_song = 0;
+var tagList;
+var ignoreList = [];
+var rememberTags;
 /*
  * Function that is called when the document is ready.
  */
@@ -64,12 +71,43 @@ function initializePage() {
 		    console.log('After: ' + player.volume);
 		}
 
-}
+    $('.chips-autocomplete').material_chip({
+    /*autocompleteOptions: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    },*/
+        placeholder: 'Enter a tag',
+        secondaryPlaceholder: 'Add Tag',
+        data: rememberTags
+    });
 
-var current_category = "Sad";
-var current_song = 0;
-var tagList;
-var ignoreList= [];
+    $('.chips').on('chip.add', function(e, chip){
+        if(!ignoreList.includes(chip.tag)){
+            ignoreList.push(chip.tag);
+        }
+        if(!passesIgnore(current_song)){
+            playNextSong();
+        }
+    });
+
+    $('.chips').on('chip.delete', function(e, chip){
+        if(ignoreList.includes(chip.tag)){
+            let arrayInd = ignoreList.indexOf(chip.tag);
+            ignoreList.splice(arrayInd,1);
+        }
+    });
+
+    $('.chips').on('chip.select', function(e, chip){
+   
+    });
+
+
+}
 
 function playNextSong() {
     var tag = current_category;
@@ -85,7 +123,7 @@ function playNextSong() {
         tag = songs[ran].tags[0];
     }
 
-    while(ran == current_song || !songs[ran].tags.includes(tag)){
+    while(ran == current_song || !songs[ran].tags.includes(tag) || !passesIgnore(ran)){
         ran = Math.floor(Math.random()*len);
         if(tag == "Chance"){
             tag = songs[ran].tags[0];
@@ -114,6 +152,15 @@ function playNextSong() {
     $('#album-art').attr("src","http://lorempixel.com/315/315/abstract/");
     $('#category_header').html(current_category);
     return;
+}
+
+function passesIgnore(ranNum){
+    for(let i = 0; i < ignoreList.length; i++){
+        if(songs[ranNum].tags.includes(ignoreList[i])){
+            return false;
+        }
+    }
+    return true;
 }
 
 function updateWheel(targetted, category){
@@ -191,3 +238,5 @@ function computeTags(){
     console.log(tagList);
     return tagList;
 }
+
+

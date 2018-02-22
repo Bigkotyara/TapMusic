@@ -126,7 +126,7 @@ span.psw {
 }
 
 /* The Close Button (x) */
-.close {
+.close2 {
     position: absolute;
     right: 25px;
     top: 0;
@@ -135,8 +135,8 @@ span.psw {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close2:hover,
+.close2:focus {
     color: red;
     cursor: pointer;
 }
