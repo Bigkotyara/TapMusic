@@ -347,6 +347,7 @@
           transform: translateY(-140%);
 }
 
+
 .materialboxed {
   display: block;
   cursor: -webkit-zoom-in;
@@ -1049,17 +1050,7 @@ textarea.materialize-textarea.validate + label:not(.label-icon).active {
   border-radius: 2px;
   background-color: #fff;
 }
-@media only screen and (min-width: 601px) {
-  .container {
-    width: 85%;
-  }
-}
 
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 70%;
-  }
-}
 
 .container .row {
   margin-left: -0.75rem;
