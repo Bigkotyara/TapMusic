@@ -120,6 +120,8 @@
                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
                         </div>
                         <div class="form-group text-center">
+                          <fb:login-button id="fb" scope="public_profile,email" onlogin="checkLoginState();">
+                          </fb:login-button>
                            <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
                            <label for="remember"> Remember Me</label>
                         </div>
@@ -178,6 +180,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/helper.js"></script>
 <script src="/js/tutorial.js"></script>
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 
 </div>
 
