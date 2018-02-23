@@ -15,6 +15,7 @@ var current_category = "Sad";
 var current_song = 0;
 var tagList;
 var ignoreList = [];
+<<<<<<< HEAD
 var rememberTags;
 
 var chip = {
@@ -22,6 +23,9 @@ var chip = {
     image: '', //optional
     id: 1, //optional
   };
+=======
+var rememberedTags;
+>>>>>>> b102a0bdfa4da1203c5a06288468ca992d311370
 /*
  * Function that is called when the document is ready.
  */
@@ -94,8 +98,13 @@ function initializePage() {
     },*/
         /*placeholder: 'Enter a tag',
         secondaryPlaceholder: 'Add Tag',
+<<<<<<< HEAD
         data: rememberTags
     });*/
+=======
+        data: rememberedTags
+    });
+>>>>>>> b102a0bdfa4da1203c5a06288468ca992d311370
 
     $('.chips').on('chip.add', function(e, chip){
         if(!ignoreList.includes(chip.tag)){
@@ -117,6 +126,7 @@ function initializePage() {
     $('.chips').on('chip.select', function(e, chip){
    
     });
+<<<<<<< HEAD
   $('.chips-autocomplete').material_chip({
     placeholder: 'Enter a tag',
     secondaryPlaceholder: '+Tag',
@@ -130,6 +140,18 @@ function initializePage() {
       minLength: 1
     }
   });
+=======
+
+   // $('#remember').prop('checked',true);
+    $('.close2').click(function(e){
+        if($("#remember").is(':checked')){
+            rememberedTags = ignoreList;
+            console.log(rememberedTags);
+        }
+
+    });
+
+>>>>>>> b102a0bdfa4da1203c5a06288468ca992d311370
 
 }
 
