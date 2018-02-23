@@ -99,7 +99,7 @@ function initializePage() {
     });
   $('.chips-autocomplete').material_chip({
     placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
+    secondaryPlaceholder: 'Add a Tag',
     autocompleteData: {
       data: {
         'Apple': null,
@@ -144,10 +144,10 @@ function playNextSong() {
 
         counter++;
         if(counter > 200){ //catch for infinte loop
-            alert("no new songs!");
+            alert("no new songs! the song database is small now, try reducing your filters");
             break;
         }
-        console.log(tag);
+        console.log(counter);
     }
     current_song = ran;
     $('#song-title').text(songs[ran].title);
