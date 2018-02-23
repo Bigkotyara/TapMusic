@@ -97,6 +97,12 @@ function initializePage() {
     $('.chips').on('chip.select', function(e, chip){
    
     });
+
+    FB.getLoginStatus(function(response) {
+        console.log(response);
+    });
+
+
   $('.chips-autocomplete').material_chip({
     placeholder: 'Enter a tag',
     secondaryPlaceholder: 'Add a Tag',
