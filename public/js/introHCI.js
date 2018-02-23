@@ -16,6 +16,12 @@ var current_song = 0;
 var tagList;
 var ignoreList = [];
 var rememberTags;
+
+var chip = {
+    tag: 'chip content',
+    image: '', //optional
+    id: 1, //optional
+  };
 /*
  * Function that is called when the document is ready.
  */
@@ -76,7 +82,7 @@ function initializePage() {
 		    console.log('After: ' + player.volume);
 		}
 
-    $('.chips-autocomplete').material_chip({
+    /*$('.chips-autocomplete').material_chip({
     /*autocompleteOptions: {
       data: {
         'Apple': null,
@@ -86,10 +92,10 @@ function initializePage() {
       limit: Infinity,
       minLength: 1
     },*/
-        placeholder: 'Enter a tag',
+        /*placeholder: 'Enter a tag',
         secondaryPlaceholder: 'Add Tag',
         data: rememberTags
-    });
+    });*/
 
     $('.chips').on('chip.add', function(e, chip){
         if(!ignoreList.includes(chip.tag)){
@@ -111,7 +117,19 @@ function initializePage() {
     $('.chips').on('chip.select', function(e, chip){
    
     });
-
+  $('.chips-autocomplete').material_chip({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+    autocompleteData: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
 
 }
 
@@ -253,3 +271,5 @@ function computeTags(){
 function acquireSongsJSON(){
 
 }
+
+
