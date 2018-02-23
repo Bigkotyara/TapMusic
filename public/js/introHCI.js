@@ -15,7 +15,7 @@ var current_category = "Sad";
 var current_song = 0;
 var tagList;
 var ignoreList = [];
-var rememberTags;
+var rememberedTags;
 /*
  * Function that is called when the document is ready.
  */
@@ -88,7 +88,7 @@ function initializePage() {
     },*/
         placeholder: 'Enter a tag',
         secondaryPlaceholder: 'Add Tag',
-        data: rememberTags
+        data: rememberedTags
     });
 
     $('.chips').on('chip.add', function(e, chip){
@@ -110,6 +110,15 @@ function initializePage() {
 
     $('.chips').on('chip.select', function(e, chip){
    
+    });
+
+   // $('#remember').prop('checked',true);
+    $('.close2').click(function(e){
+        if($("#remember").is(':checked')){
+            rememberedTags = ignoreList;
+            console.log(rememberedTags);
+        }
+
     });
 
 

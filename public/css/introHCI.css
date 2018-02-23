@@ -94,6 +94,11 @@ body {
      opacity: 0;
 }
 
+#remember{
+    opacity: 1;
+    position: relative;
+}
+
 #project2 button{
     width: 20vh;
     height: 20vh;
@@ -101,6 +106,7 @@ body {
 
 .btn.btn-default.btn-lg{
     margin-bottom: 5vh;
+    padding-bottom: 5px;
 }
 
 .container{
