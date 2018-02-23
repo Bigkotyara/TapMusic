@@ -15,17 +15,8 @@ var current_category = "Sad";
 var current_song = 0;
 var tagList;
 var ignoreList = [];
-<<<<<<< HEAD
 var rememberTags;
-
-var chip = {
-    tag: 'chip content',
-    image: '', //optional
-    id: 1, //optional
-  };
-=======
 var rememberedTags;
->>>>>>> b102a0bdfa4da1203c5a06288468ca992d311370
 /*
  * Function that is called when the document is ready.
  */
@@ -86,26 +77,6 @@ function initializePage() {
 		    console.log('After: ' + player.volume);
 		}
 
-    /*$('.chips-autocomplete').material_chip({
-    /*autocompleteOptions: {
-      data: {
-        'Apple': null,
-        'Microsoft': null,
-        'Google': null
-      },
-      limit: Infinity,
-      minLength: 1
-    },*/
-        /*placeholder: 'Enter a tag',
-        secondaryPlaceholder: 'Add Tag',
-<<<<<<< HEAD
-        data: rememberTags
-    });*/
-=======
-        data: rememberedTags
-    });
->>>>>>> b102a0bdfa4da1203c5a06288468ca992d311370
-
     $('.chips').on('chip.add', function(e, chip){
         if(!ignoreList.includes(chip.tag)){
             ignoreList.push(chip.tag);
@@ -126,7 +97,6 @@ function initializePage() {
     $('.chips').on('chip.select', function(e, chip){
    
     });
-<<<<<<< HEAD
   $('.chips-autocomplete').material_chip({
     placeholder: 'Enter a tag',
     secondaryPlaceholder: '+Tag',
@@ -140,7 +110,6 @@ function initializePage() {
       minLength: 1
     }
   });
-=======
 
    // $('#remember').prop('checked',true);
     $('.close2').click(function(e){
@@ -150,8 +119,6 @@ function initializePage() {
         }
 
     });
-
->>>>>>> b102a0bdfa4da1203c5a06288468ca992d311370
 
 }
 
