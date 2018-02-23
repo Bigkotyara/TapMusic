@@ -1,6 +1,6 @@
 'use strict';
 
-// Call this function when the page loads (the "ready" event)
+/* Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     var tags = [
       "Happy",
@@ -29,7 +29,7 @@ $(document).ready(function() {
     $( "#tags" ).autocomplete({
       source: tags
     });
-  } );
+  } );*/
 
 $('#add-tag').click(function(e) {
   var t = document.getElementById("tags");

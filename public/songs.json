@@ -1,4 +1,4 @@
-var songs = [
+{ "songs" : [
     {
       "title": "Such Small Hands",
       "artist": "La Dispute",
@@ -554,4 +554,5 @@ var songs = [
         "Love"
       ]
     }
-  ];
+  ]
+}

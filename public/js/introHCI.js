@@ -2,14 +2,14 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-	initializePage();
-
+    acquireSongsJSON();
+    initializePage();
 });
 
 var audioElement = document.createElement('audio');
 var playing = false;
 var currDuration = 0;
-
+var songs;
 
 var current_category = "Sad";
 var current_song = 0;
@@ -22,6 +22,11 @@ var rememberTags;
 function initializePage() {
 
 	// add any functionality and listeners you want here
+
+    $.getJSON("../songs.json",function(result){
+        songs = result.songs;
+        audioElement.addEventListener('ended', playNextSong(), false);
+    });
 
     $('#play-button, #play-button-ov').click(function(e){
         if (playing) {
@@ -61,7 +66,7 @@ function initializePage() {
         currDuration = audioElement.duration;
     });
 
-    audioElement.addEventListener('ended', playNextSong(), false);
+    
 
 		window.SetVolume = function(val)
 		{
@@ -99,6 +104,7 @@ function initializePage() {
         if(ignoreList.includes(chip.tag)){
             let arrayInd = ignoreList.indexOf(chip.tag);
             ignoreList.splice(arrayInd,1);
+            //console.log(ignoreList);
         }
     });
 
@@ -125,15 +131,16 @@ function playNextSong() {
 
     while(ran == current_song || !songs[ran].tags.includes(tag) || !passesIgnore(ran)){
         ran = Math.floor(Math.random()*len);
-        if(tag == "Chance"){
+        if(current_category == "Chance"){
             tag = songs[ran].tags[0];
         }
 
         counter++;
-        if(counter > 100){ //catch for infinte loop
+        if(counter > 200){ //catch for infinte loop
             alert("no new songs!");
             break;
         }
+        console.log(tag);
     }
     current_song = ran;
     $('#song-title').text(songs[ran].title);
@@ -155,9 +162,13 @@ function playNextSong() {
 }
 
 function passesIgnore(ranNum){
+    console.log(ranNum);
     for(let i = 0; i < ignoreList.length; i++){
-        if(songs[ranNum].tags.includes(ignoreList[i])){
-            return false;
+        if(ignoreList[i] != current_category){
+            console.log(ignoreList[i] + current_category);
+            if(songs[ranNum].tags.includes(ignoreList[i])){
+                return false;
+            }
         }
     }
     return true;
@@ -239,4 +250,6 @@ function computeTags(){
     return tagList;
 }
 
+function acquireSongsJSON(){
 
+}
