@@ -67,7 +67,7 @@ function initializePage() {
         currDuration = audioElement.duration;
     });
 
-    
+
 
 		window.SetVolume = function(val)
 		{
@@ -95,7 +95,7 @@ function initializePage() {
     });
 
     $('.chips').on('chip.select', function(e, chip){
-   
+
     });
 
   $('.chips-autocomplete').material_chip({
@@ -261,5 +261,3 @@ function computeTags(){
 function acquireSongsJSON(){
 
 }
-
-

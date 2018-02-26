@@ -55,7 +55,7 @@
               </div>
          {{/each}}
         </div>
-<div class="botnav">
+<div class="botnav fixed-bottom">
         <div>
             <span id="song-up" class="glyphicon glyphicon-chevron-up"></span>
             <h2 id="song-title">Tap an Icon to Begin&nbsp</h2>
@@ -67,7 +67,7 @@
 
 
 <div id="myNav" class="overlay">
-  
+
   <div class="overlay-content">
   <!-- <span id="song-down" class="glyphicon glyphicon-chevron-down closebtn"></span> -->
   <span id="song-down" class="closebtn"><span class="glyphicon glyphicon-chevron-down" ></span></span>
@@ -83,13 +83,11 @@
     </ul>
   </div>
 
-    <div class="jumbotron">
-    <nav class="navbar navbar-light bg-light">
-            <h1>{{category}}</h1>
-    </nav>
+<h1 id="category_header" style="text-align:center; color:white;">{{current_category}}</h1>
 
-        <div class="album-art-container" style="padding-bottom:100px">
-                <img id="album-art" class="img-responsive" src="http://www.firesidechatmusic.com/artwork/AlbumArt_Blank.jpg" alt="album art">
+        <div class="album-art-container">
+                <img id="album-art" src="https://dummyimage.com/315x315/858585/858585.png" alt="album art">
+							</div>
 <br>
                 <div class="progress">
     <div id="length" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
@@ -107,10 +105,8 @@
 
                 </div>
 
-                <div class="glyphicon glyphicon-volume-off"></div>&nbsp<input id="vol-control" type="range" min="0" max="100" step="1"></input>&nbsp<div class="glyphicon glyphicon-volume-up"></div>
+                <i class="glyphicon glyphicon-volume-off" style="color:white;"></i>&nbsp<input id="vol-control" type="range" min="0" max="100" step="1"></input>&nbsp<i class="glyphicon glyphicon-volume-up" style="color:white;"></i>
 
-        </div>
-</div>
 </div>
 
 
@@ -159,7 +155,7 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/tags.js"></script>
   <script src="/js/tagger.js"></script>
-  
+
 
 </div>
 </body>
