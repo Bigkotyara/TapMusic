@@ -274,7 +274,7 @@
       "duration": "2:43",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
-        "Eletronic",
+        "Electronic",
         "Vocals",
         "Happy",
         "Up-beat",
@@ -581,6 +581,183 @@
         "Clout",
         "Sad",
         "Love"
+      ]
+    },
+    {
+      "title": "Ukulele",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
+      "tags": [
+        "Ukulele",
+        "Happy",
+        "Funny",
+        "Upbeat",
+        "Positive",
+        "Joy",
+        "Acoustic",
+        "Gentle"
+      ]
+    },
+    {
+      "title": "Buddy",
+      "artist": "Bensound",
+      "duration": "2:02",
+      "source": "https://www.bensound.com/bensound-music/bensound-buddy.mp3",
+      "tags": [
+        "Joy",
+        "Happy",
+        "Funny",
+        "Motivation",
+        "Positive",
+        "Joy",
+        "Acoustic"
+      ]
+    },
+    {
+      "title": "Cute",
+      "artist": "Bensound",
+      "duration": "3:14",
+      "source": "https://www.bensound.com/bensound-music/bensound-cute.mp3",
+      "tags": [
+        "Ukulele",
+        "Happy",
+        "Sweet",
+        "Soft",
+        "Positive",
+        "Joy",
+        "Acoustic",
+        "Cute"
+      ]
+    },
+    {
+      "title": "Energy",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-energy.mp3",
+      "tags": [
+        "Energetic",
+        "Happy",
+        "Guitar",
+        "Rock",
+        "Positive",
+        "Success",
+        "Motivation",
+        "Upbeat",
+        "Confidence"
+      ]
+    },
+    {
+      "title": "A New Beginning",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-anewbeginning.mp3",
+      "tags": [
+        "Energetic",
+        "Optimistic",
+        "Happy",
+        "Guitar",
+        "Rock",
+        "Positive",
+        "Success",
+        "Motivation",
+        "Upbeat",
+        "Confidence",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Retro Soul",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-retrosoul.mp3",
+      "tags": [
+        "Retro",
+        "Soul",
+        "Piano",
+        "Upbeat",
+        "Motivation",
+        "Blues",
+        "Joy"
+      ]
+    },
+    {
+      "title": "A Day to Remember",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-adaytoremember.mp3",
+      "tags": [
+        "Guitar",
+        "Love",
+        "Romantic",
+        "Piano",
+        "Soft",
+        "Calm",
+        "Acoustic",
+        "Gentle",
+        "Sweet"
+      ]
+    },
+    {
+      "title": "Love",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-love.mp3",
+      "tags": [
+        "Piano",
+        "Love",
+        "Romantic",
+        "Piano",
+        "Soft",
+        "Calm",
+        "Jazzy",
+        "Gentle",
+        "Sweet",
+        "Sad"
+      ]
+    },
+    {
+      "title": "Summer",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-summer.mp3",
+      "tags": [
+        "Chill",
+        "Relax",
+        "Electronic",
+        "Positive",
+        "Calm"
+      ]
+    },
+    {
+      "title": "The Lounge",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
+      "tags": [
+        "Chill",
+        "Relax",
+        "Electronic",
+        "Positive",
+        "Calm",
+        "Soft",
+        "Jazzy",
+        "Slow"
+      ]
+    },
+    {
+      "title": "Ofelia's Dream",
+      "artist": "Bensound",
+      "duration": "2:26",
+      "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
+      "tags": [
+        "Soundtrack",
+        "Sad",
+        "Dramatic",
+        "Slow",
+        "Dark",
+        "Acoustic",
+        "Gentle"
       ]
     }
   ]

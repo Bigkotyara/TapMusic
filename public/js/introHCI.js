@@ -26,7 +26,7 @@ function initializePage() {
 
     $.getJSON("../songs.json",function(result){
         songs = result.songs;
-        audioElement.addEventListener('ended', playNextSong(), false);
+        
     });
 
     $('#play-button, #play-button-ov').click(function(e){
@@ -120,6 +120,10 @@ function initializePage() {
         }
 
     });
+
+    audioElement.addEventListener('ended', function() {
+        playNextSong();
+    }, false);
 
 }
 
