@@ -104,20 +104,6 @@ function initializePage() {
 
     });
 
-  $('.chips-autocomplete').material_chip({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: 'Add a Tag',
-    autocompleteData: {
-      data: {
-        'Apple': null,
-        'Microsoft': null,
-        'Google': null
-      },
-      limit: Infinity,
-      minLength: 1
-    }
-  });
-
    // $('#remember').prop('checked',true);
     $('.close2').click(function(e){
         if($("#remember").is(':checked')){
