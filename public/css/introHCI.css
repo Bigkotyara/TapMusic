@@ -249,6 +249,10 @@
   padding-left: 8px;
 }
 
+.chips-initial .close {
+  display:none;
+}
+
 .chips {
   border: none;
   border-bottom: 1px solid #9e9e9e;
@@ -271,9 +275,12 @@
   cursor: text;
 }
 
-.chips .chip.selected {
-  background-color: #26a69a;
+.chips-initial .chip.selected {
+  background-color: #e66;
   color: #fff;
+}
+
+.chips-autocomplete .chip.selected {
 }
 
 .chips .input {

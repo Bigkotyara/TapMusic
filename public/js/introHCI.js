@@ -77,8 +77,6 @@ function initializePage() {
         currDuration = audioElement.duration;
     });
 
-
-
 		window.SetVolume = function(val)
 		{
 		    var player = audioElement;
@@ -88,6 +86,7 @@ function initializePage() {
 		}
 
     $('.chips').on('chip.add', function(e, chip){
+
         if(!ignoreList.includes(chip.tag)){
             ignoreList.push(chip.tag);
         }
@@ -104,9 +103,39 @@ function initializePage() {
         }
     });
 
-    $('.chips').on('chip.select', function(e, chip){
+    $('.chips-autocomplete').on('chip.select', function(e, chip){
+        
+    });
+
+    // for Page B alternate view
+
+    $('.chips-initial').on('chip.select', function(e, chip){
+        if(!ignoreList.includes(chip.tag)){
+            ignoreList.unshift(chip.tag);
+        }
+
+        var ignored_chips = [];
+        //ignored_chips.push({"tag":chip.tag});
+        ignoreList.forEach(function(tag){
+            var newtag = {};
+            newtag['tag'] = tag;
+            ignored_chips.push(newtag);
+        })
+
+        $('.chips-autocomplete').material_chip({
+          data: ignored_chips
+        });
+
+        $(e.target).find('.chip.selected').animate({opacity:0},{complete: function(){
+            playNextSong();
+        }});
 
     });
+    $('.chips-initial').keydown(function(e) {
+       e.preventDefault();
+       return false;
+    });
+
 
    // $('#remember').prop('checked',true);
     $('.close2').click(function(e){
@@ -161,6 +190,18 @@ function playNextSong() {
         audioElement.setAttribute('src', '');
         pause();
     }
+
+    var chipTags = [];
+    songs[current_song].tags.forEach(function(tagg){
+        var newtag = {};
+        newtag['tag'] = tagg;
+        chipTags.push(newtag);
+    })
+
+    // populate viewAlt chips per song
+    $('.chips-initial').material_chip({
+      data: chipTags
+    });
 
 
     // new art (random)

@@ -84,7 +84,11 @@
                   </li>
                </ul>
             </div>
-            <h1 id="category_header" style="text-align:center; color:white;">{{current_category}}</h1>
+            {{#if viewAlt}}
+              <div class="chips chips-initial" data-index="0" data-initialized="true"></div>
+            {{else}}
+              <h1 id="category_header" style="text-align:center; color:white;">{{current_category}}</h1>
+            {{/if}}
             <div class="album-art-container">
 
                <img id="album-art" src="https://dummyimage.com/315x315/858585/858585.png" alt="album art">
@@ -147,5 +151,16 @@
       <script src="/js/bootstrap.min.js"></script>
       <script src="/js/tags.js"></script>
       <script src="/js/tagger.js"></script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114584880-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114584880-2');
+      </script>
+
    </body>
 </html>
