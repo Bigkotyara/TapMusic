@@ -2,31 +2,46 @@
   "Sad" : [
         "Sad",
         "Slow",
-        "Build-up",
         "Emo",
         "Poetry",
-        "Spoken-word"
+        "Spoken-word",
+        "Dark"
       ],
   "Happy" : [
         "Happy",
-        "Up-beat"
+        "Upbeat",
+        "Joy",
+        "Sweet"
       ],
  "Study" : [
         "Sad",
         "Slow",
-        "Study"
+        "Study",
+        "Calm",
+        "Peaceful"
       ],
 "Workout" : [
         "Workout",
-        "Fast"
+        "Fast",
+        "Angry",
+        "Heavy",
+        "Motivation",
+        "Success"
       ],
 "Chance" : [
         "Chance"
       ],
 "Love" : [
-        "Love"
+        "Love",
+        "Gentle",
+        "Sweet",
+        "Romantic",
+        "Soft"
       ],
 "Relax" : [
-        "Relax"
+        "Relax",
+        "Peaceful",
+        "Calm",
+        "Chill"
       ]
 }

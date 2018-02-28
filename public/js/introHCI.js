@@ -11,6 +11,7 @@ var playing = false;
 var currDuration = 0;
 var songs;
 var categories;
+var tags;
 
 var current_category = "Sad";
 var current_song = 0;
@@ -27,6 +28,7 @@ function initializePage() {
 
     $.getJSON("../songs.json",function(result){
         songs = result.songs;
+        tags = computeTags(songs);
         
     });
 
@@ -34,6 +36,8 @@ function initializePage() {
         categories = result;
         
     });
+
+
 
     $('#play-button, #play-button-ov').click(function(e){
         if (playing) {
@@ -256,19 +260,32 @@ function closeNav() {
     console.log("close overlay");
 }
 
-function computeTags(){
-    var tagList = [];
-    songs.forEach(function(element){
+
+function computeTags(songList){
+    var tagList = {};
+    songList.forEach(function(element){
 
         element.tags.forEach(function(tag){
-            if(!tagList.includes(tag)){
-                tagList.push(tag);
+            if(!(tag in tagList)){
+                tagList[tag] = null;
             }
         })
     })
     console.log(tagList);
+    
+
+  $('.chips-autocomplete').material_chip({
+    autocompleteOptions: {
+      data: tagList,
+      limit: 6,
+      minLength: 1
+    }
+  });
+
     return tagList;
+
 }
+
 
 function acquireSongsJSON(){
 

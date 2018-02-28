@@ -5,7 +5,7 @@ $(document).ready(function() {
   onload();
 })
 
-var tags = [
+var tags2 = [
       "Happy",
       "Workout",
       "Sad",
@@ -38,6 +38,7 @@ var tags = [
 
   function onload() {
 
+
 $('.chips-initial').material_chip('data');
   $('.chips').material_chip();
   $('.chips-initial').material_chip({
@@ -68,3 +69,5 @@ $('.chips-initial').material_chip('data');
     }
   });
 };
+
+
