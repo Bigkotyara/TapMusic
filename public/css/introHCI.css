@@ -167,8 +167,9 @@
 
 .overlay {
     height: 0%;
-    width: 100%;
+
     position: fixed;
+	 display: inline-block;
     z-index: 1;
     bottom: 0;
     left: 0;
@@ -1857,3 +1858,20 @@ textarea.materialize-textarea.validate + label:not(.label-icon).active {
     font-family: Arial;
 }
 .success {background-color: #4CAF50;}
+
+.value {
+	display: none;
+}
+
+.thumb {
+	display: none;
+}
+
+.progress {
+	max-width: 315px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+
+}
