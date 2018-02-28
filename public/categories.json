@@ -1,0 +1,64 @@
+{ "songs" : [
+
+  { "Sad" :
+    {
+      "tags": [
+        "Sad",
+        "Slow",
+        "Build-up",
+        "Emo",
+        "Poetry",
+        "Spoken-word"
+      ]
+    }
+  },
+  { "Workout" :
+    {
+      "tags": [
+        "Sad",
+        "Slow",
+        "Build-up",
+        "Emo",
+        "Poetry",
+        "Spoken-word"
+      ]
+    }
+  },
+  { "Sad" :
+    {
+      "tags": [
+        "Sad",
+        "Slow",
+        "Build-up",
+        "Emo",
+        "Poetry",
+        "Spoken-word"
+      ]
+    }
+  },
+  { "Sad" :
+    {
+      "tags": [
+        "Sad",
+        "Slow",
+        "Build-up",
+        "Emo",
+        "Poetry",
+        "Spoken-word"
+      ]
+    }
+  },
+  { "Sad" :
+    {
+      "tags": [
+        "Sad",
+        "Slow",
+        "Build-up",
+        "Emo",
+        "Poetry",
+        "Spoken-word"
+      ]
+    }
+  },
+  ]
+}

@@ -10,6 +10,7 @@ var audioElement = document.createElement('audio');
 var playing = false;
 var currDuration = 0;
 var songs;
+var categories;
 
 var current_category = "Sad";
 var current_song = 0;
@@ -26,6 +27,11 @@ function initializePage() {
 
     $.getJSON("../songs.json",function(result){
         songs = result.songs;
+        
+    });
+
+    $.getJSON("../categories.json",function(result){
+        categories = result.categories;
         
     });
 
@@ -174,7 +180,20 @@ function playNextSong() {
 }
 
 function passesIgnore(ranNum){
-    console.log(ranNum);
+    //console.log(ranNum);
+    for(let i = 0; i < ignoreList.length; i++){
+        if(ignoreList[i] != current_category){
+            console.log(ignoreList[i] + current_category);
+            if(songs[ranNum].tags.includes(ignoreList[i])){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+function matchesCategory(ranNum){
+    //console.log(ranNum);
     for(let i = 0; i < ignoreList.length; i++){
         if(ignoreList[i] != current_category){
             console.log(ignoreList[i] + current_category);
