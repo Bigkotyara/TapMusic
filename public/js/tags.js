@@ -1,3 +1,10 @@
+'use strict';
+
+// Call this function when the page loads (the "ready" event)
+$(document).ready(function() {
+  onload();
+})
+
 var tags = [
       "Happy",
       "Workout",
@@ -22,3 +29,42 @@ var tags = [
       "Profanity",
       "Club"
     ];
+
+    var chip = {
+    tag: 'chip content',
+    image: '', //optional
+    id: 1, //optional
+  };
+
+  function onload() {
+
+$('.chips-initial').material_chip('data');
+  $('.chips').material_chip();
+  $('.chips-initial').material_chip({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').material_chip({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').material_chip({
+    autocompleteOptions: {
+      data: {
+        'Sad': null,
+        'Slow': null,
+        'Piano': null,
+        'Positive': null,
+        'Relax': null,
+        'Happy': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+};
