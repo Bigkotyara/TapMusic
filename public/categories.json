@@ -1,64 +1,32 @@
-{ "songs" : [
-
-  { "Sad" :
-    {
-      "tags": [
+{ 
+  "Sad" : [
         "Sad",
         "Slow",
         "Build-up",
         "Emo",
         "Poetry",
         "Spoken-word"
-      ]
-    }
-  },
-  { "Workout" :
-    {
-      "tags": [
+      ],
+  "Happy" : [
+        "Happy",
+        "Up-beat"
+      ],
+ "Study" : [
         "Sad",
         "Slow",
-        "Build-up",
-        "Emo",
-        "Poetry",
-        "Spoken-word"
+        "Study"
+      ],
+"Workout" : [
+        "Workout",
+        "Fast"
+      ],
+"Chance" : [
+        "Chance"
+      ],
+"Love" : [
+        "Love"
+      ],
+"Relax" : [
+        "Relax"
       ]
-    }
-  },
-  { "Sad" :
-    {
-      "tags": [
-        "Sad",
-        "Slow",
-        "Build-up",
-        "Emo",
-        "Poetry",
-        "Spoken-word"
-      ]
-    }
-  },
-  { "Sad" :
-    {
-      "tags": [
-        "Sad",
-        "Slow",
-        "Build-up",
-        "Emo",
-        "Poetry",
-        "Spoken-word"
-      ]
-    }
-  },
-  { "Sad" :
-    {
-      "tags": [
-        "Sad",
-        "Slow",
-        "Build-up",
-        "Emo",
-        "Poetry",
-        "Spoken-word"
-      ]
-    }
-  },
-  ]
 }

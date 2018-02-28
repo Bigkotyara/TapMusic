@@ -31,7 +31,7 @@ function initializePage() {
     });
 
     $.getJSON("../categories.json",function(result){
-        categories = result.categories;
+        categories = result;
         
     });
 
@@ -147,7 +147,7 @@ function playNextSong() {
         tag = songs[ran].tags[0];
     }
 
-    while(ran == current_song || !songs[ran].tags.includes(tag) || !passesIgnore(ran)){
+    while(ran == current_song || !matchesCategory(ran) || !passesIgnore(ran)){
         ran = Math.floor(Math.random()*len);
         if(current_category == "Chance"){
             tag = songs[ran].tags[0];
@@ -158,7 +158,7 @@ function playNextSong() {
             alert("no new songs! the song database is small now, try reducing your filters");
             break;
         }
-        console.log(counter);
+        //console.log(counter);
     }
     current_song = ran;
     $('#song-title').text(songs[ran].title);
@@ -183,7 +183,7 @@ function passesIgnore(ranNum){
     //console.log(ranNum);
     for(let i = 0; i < ignoreList.length; i++){
         if(ignoreList[i] != current_category){
-            console.log(ignoreList[i] + current_category);
+            //console.log(ignoreList[i] + current_category);
             if(songs[ranNum].tags.includes(ignoreList[i])){
                 return false;
             }
@@ -193,20 +193,23 @@ function passesIgnore(ranNum){
 }
 
 function matchesCategory(ranNum){
-    //console.log(ranNum);
-    for(let i = 0; i < ignoreList.length; i++){
-        if(ignoreList[i] != current_category){
-            console.log(ignoreList[i] + current_category);
-            if(songs[ranNum].tags.includes(ignoreList[i])){
-                return false;
-            }
+    //console.log(current_category + " " + categories);
+    if(current_category == "Chance"){
+        return true;
+    }
+    var cat = categories[current_category];
+    //console.log(cat);
+    for(let i = 0; i < cat.length; i++){
+        //console.log(cat.length + current_category);
+        if(songs[ranNum].tags.includes(cat[i])){
+            return true;
         }
     }
-    return true;
+    return false;
 }
 
 function updateWheel(targetted, category){
-    console.log('updatewheel: ' + category);
+    console.log('Category is: ' + category);
     // update the music information to new selection
     current_category = category;
     playNextSong();
