@@ -87,6 +87,10 @@ function initializePage() {
 
     $('.chips').on('chip.add', function(e, chip){
 
+        //google analysis
+        gtag('create','UA-114584880-2','auto');
+        gtag('send', 'event', 'filter', 'add');
+
         if(!ignoreList.includes(chip.tag)){
             ignoreList.push(chip.tag);
         }
@@ -110,6 +114,11 @@ function initializePage() {
     // for Page B alternate view
 
     $('.chips-initial').on('chip.select', function(e, chip){
+
+        //google analysis
+        gtag('create','UA-114584880-2','auto');
+        gtag('send', 'event', 'filter', 'add');
+
         if(!ignoreList.includes(chip.tag)){
             ignoreList.unshift(chip.tag);
         }
@@ -211,7 +220,7 @@ function playNextSong() {
 }
 
 function passesIgnore(ranNum){
-    //console.log(ranNum);
+    console.log(ignoreList);
     for(let i = 0; i < ignoreList.length; i++){
         if(ignoreList[i] != current_category){
             //console.log(ignoreList[i] + current_category);
