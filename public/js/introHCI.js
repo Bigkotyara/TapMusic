@@ -2,7 +2,6 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-    acquireSongsJSON();
     initializePage();
 });
 
@@ -88,8 +87,7 @@ function initializePage() {
     $('.chips').on('chip.add', function(e, chip){
 
         //google analysis
-        gtag('create','UA-114584880-2','auto');
-        gtag('send', 'event', 'filter', 'add');
+        RecordFilter(e);
 
         if(!ignoreList.includes(chip.tag)){
             ignoreList.push(chip.tag);
@@ -116,8 +114,10 @@ function initializePage() {
     $('.chips-initial').on('chip.select', function(e, chip){
 
         //google analysis
+        e.preventDefault();
+        console.log("HERE");
         gtag('create','UA-114584880-2','auto');
-        gtag('send', 'event', 'filter', 'add');
+        gtag('send', 'event', 'filter', 'on');
 
         if(!ignoreList.includes(chip.tag)){
             ignoreList.unshift(chip.tag);
@@ -337,6 +337,11 @@ function computeTags(songList){
 }
 
 
-function acquireSongsJSON(){
+function RecordFilter(e) {
+    // Prevent following the link
+    console.log("MAYBE HERE?");
+    e.preventDefault();
+        ga('create','UA-114584880-2','auto');
+        ga('send', 'event', 'filter', 'on');
 
 }
