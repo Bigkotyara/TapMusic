@@ -1,191 +1,166 @@
 <!doctype html>
-
 <html>
-<head>
-  <title>TapMusic</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-  <link href="/css/login.css" rel="stylesheet">
-  <link href="/css/introHCI.css" rel="stylesheet">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
-  <style>
-  h1,h2,h3,h4 {color: white;}
-  </style>
-</head>
-
-<body style="background-color:#333333;">
-  <div class="topnav">
-    <h3>TapMusic</h3>
-  </div>
-</br>
-
-<div id="div1">
-  <h1 align="center">Welcome!</h1>
-  <br>
-
-  <div id="moodbutton" class="project">
-
-    <a id="show" class="em-svg em-smiley" style="width:100px;height:100px;">
-    </a>
-
-    <a id="show" class="em-svg em-cry" style="width:100px;height:100px;">
-    </a>
-
-    <a class="em-svg em-books" style="width:100px;height:100px;">
-    </a>
-  </div>
-</div>
-<h2 id="div1" align="center">Tap a mood icon for tutorial...</h2>
-
-<div id="div2" align="center">
-  <a class="em-svg em-smiley" style="width:100px;height:100px;">
-  </a>
-  <h2>Music matching your mood will begin to play!</h2>
-  <div  align="center">
-    <button id="nextbutton" type="button" style="background-color:#4CAF50;" class="btn btn-login">&nbspNext&nbsp</button>
-  </div>
-</div>
-
-<div id="div3" align="center">
-  <div class="project">
-    {{#each projects}}
-        <div id={{id}} class="emoji-button">
-          <button class="{{icon}}" id="{{name}}">
-          </button>
-        </div>
-   {{/each}}
-  </div>
-  <div class="project">
-    {{#each projects1}}
-        <div id={{id}} class="emoji-button">
-          <button class="{{icon}}" id="{{name}}">
-          </button>
-        </div>
-   {{/each}}
-  </div>
-  <div class="project">
-    {{#each projects2}}
-        <div id={{id}} class="emoji-button">
-          <button class="{{icon}}" id="{{name}}">
-          </button>
-        </div>
-   {{/each}}
-  </div>
-  <br>
-  <h4>Log in to save the most recent icon at the center!</h4>
-
-</div>
-
-</div>
-
-<div class="fixed-bottom">
-  <a href="/"><button type="button" class="btn btn-login btn-block">Home</button></a>
-  <a><button onclick="document.getElementById('login-pop').style.display='block'" type="button" style="background-color:#6f5697;" class="btn btn-login btn-block">Log In</button></a>
-</div>
-
-<div id="login-pop" class="modal">
-   <!--<form class="modal-content animate" action="/action_page.php">-->
-   <!-- <div class="container">-->
-   <div class="row animate">
-      <div class="col-md-6 col-md-offset-3">
-         <div class="panel panel-login">
-            <span onclick="document.getElementById('login-pop').style.display='none'" class="close2" title="Close Modal">&times;</span>
-            <div class="panel-heading">
-               <div class="row">
-                  <div class="col-xs-6">
-                     <a href="#" class="active" id="login-form-link">Login</a>
-                  </div>
-                  <div class="col-xs-6">
-                     <a href="#" id="register-form-link">Register</a>
-                  </div>
-               </div>
-               <hr>
+   <head>
+      <title>TapMusic</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+      <link href="/css/login.css" rel="stylesheet">
+      <link href="/css/introHCI.css" rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <style>
+         h1,h2,h3,h4 {color: white;}
+      </style>
+   </head>
+   <body style="background-color:#333333;">
+      <div class="topnav">
+         <h3>TapMusic</h3>
+      </div>
+      </br>
+      <div id="div1">
+         <h1 align="center">Welcome!</h1>
+         <br>
+         <div id="moodbutton" class="project">
+            <a id="show" class="em-svg em-smiley" style="width:100px;height:100px;">
+            </a>
+            <a id="show" class="em-svg em-cry" style="width:100px;height:100px;">
+            </a>
+            <a class="em-svg em-books" style="width:100px;height:100px;">
+            </a>
+         </div>
+      </div>
+      <h2 id="div1" align="center">Tap a mood icon for tutorial...</h2>
+      <div id="div2" align="center">
+         <a class="em-svg em-smiley" style="width:100px;height:100px;">
+         </a>
+         <h2>Music matching your mood will begin to play!</h2>
+         <div  align="center">
+            <button id="nextbutton" type="button" style="background-color:#4CAF50;" class="btn btn-login">&nbspNext&nbsp</button>
+         </div>
+      </div>
+      <div id="div3" align="center">
+         <div class="project">
+            {{#each projects}}
+            <div id={{id}} class="emoji-button">
+               <button class="{{icon}}" id="{{name}}">
+               </button>
             </div>
-            <div class="panel-body">
-               <div class="row">
-                  <div class="col-lg-12">
-                     <!-- <form id="login-form" method="post" role="form" style="display: block;"> -->
-                     <form id="login-form" role="form" style="display: block;">
-                        <div class="form-group">
-                           <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+            {{/each}}
+         </div>
+         <div class="project">
+            {{#each projects1}}
+            <div id={{id}} class="emoji-button">
+               <button class="{{icon}}" id="{{name}}">
+               </button>
+            </div>
+            {{/each}}
+         </div>
+         <div class="project">
+            {{#each projects2}}
+            <div id={{id}} class="emoji-button">
+               <button class="{{icon}}" id="{{name}}">
+               </button>
+            </div>
+            {{/each}}
+         </div>
+         <br>
+         <h4>Log in to save the most recent icon at the center!</h4>
+      </div>
+      </div>
+      <div class="fixed-bottom">
+         <a href="/"><button type="button" class="btn btn-login btn-block">Home</button></a>
+         <a><button onclick="document.getElementById('login-pop').style.display='block'" type="button" style="background-color:#6f5697;" class="btn btn-login btn-block">Log In</button></a>
+      </div>
+      <div id="login-pop" class="modal">
+         <div class="row animate">
+            <div class="col-md-6 col-md-offset-3">
+               <div class="panel panel-login">
+                  <span onclick="document.getElementById('login-pop').style.display='none'" class="close2" title="Close Modal">&times;</span>
+                  <div class="panel-heading">
+                     <div class="row">
+                        <div class="col-xs-6">
+                           <a href="#" class="active" id="login-form-link">Login</a>
                         </div>
-                        <div class="form-group">
-                           <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                        <div class="col-xs-6">
+                           <a href="#" id="register-form-link">Register</a>
                         </div>
-                        <div class="form-group text-center">
-                          <fb:login-button id="fb" scope="public_profile,email" onlogin="checkLoginState();">
-                        </fb:login-button>
-                        <p for="remember">Remember Me <input type="checkbox" tabindex="3" class="" name="remember" id="remember"></p>
-
-                        </div>
-                        <div class="form-group">
-                           <div class="row">
-                              <div class="col-sm-6 col-sm-offset-3">
-                                 <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" style="background-color:#6f5697;" value="Log In">
+                     </div>
+                     <hr>
+                  </div>
+                  <div class="panel-body">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <form id="login-form" role="form" style="display: block;">
+                              <div class="form-group">
+                                 <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                               </div>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="row">
-                              <div class="col-lg-12">
-                                 <div class="text-center">
-                                    <a href="/" tabindex="5" class="forgot-password">Forgot Password?</a>
+                              <div class="form-group">
+                                 <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                              </div>
+                              <div class="form-group text-center">
+                                 <fb:login-button id="fb" scope="public_profile,email" onlogin="checkLoginState();">
+                                 </fb:login-button>
+                                 <p for="remember">Remember Me <input type="checkbox" tabindex="3" class="" name="remember" id="remember"></p>
+                              </div>
+                              <div class="form-group">
+                                 <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                       <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" style="background-color:#6f5697;" value="Log In">
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                        </div>
-                     </form>
-                     <!-- <form id="register-form" method="post" role="form" style="display: none;"> -->
-                     <form id="register-form" role="form" style="display: none;">
-                        <div class="form-group">
-                           <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                        </div>
-                        <div class="form-group">
-                           <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
-                        </div>
-                        <div class="form-group">
-                           <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                           <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                        </div>
-                        <div class="form-group">
-                           <div class="row">
-                              <div class="col-sm-6 col-sm-offset-3">
-                                 <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" style="background-color:#6f5697;" value="Register Now">
+                              <div class="form-group">
+                                 <div class="row">
+                                    <div class="col-lg-12">
+                                       <div class="text-center">
+                                          <a href="/" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
-                           </div>
+                           </form>
+                           <form id="register-form" role="form" style="display: none;">
+                              <div class="form-group">
+                                 <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                              </div>
+                              <div class="form-group">
+                                 <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                              </div>
+                              <div class="form-group">
+                                 <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                              </div>
+                              <div class="form-group">
+                                 <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                              </div>
+                              <div class="form-group">
+                                 <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                       <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" style="background-color:#6f5697;" value="Register Now">
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
                         </div>
-                     </form>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   <!--</div>-->
-   <!-- </form>-->
-</div>
-
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/helper.js"></script>
-<script src="/js/tutorial.js"></script>
-{{> facebook}}
-<script src="/js/facebook.js"></script>
-
-</div>
-
-</body>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/js/helper.js"></script>
+      <script src="/js/tutorial.js"></script>
+      {{> facebook}}
+      <script src="/js/facebook.js"></script>
+      </div>
+   </body>
 </html>

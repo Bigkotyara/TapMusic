@@ -23,22 +23,22 @@ var rememberedTags;
  */
 function initializePage() {
 
-	// add any functionality and listeners you want here
+    // add any functionality and listeners you want here
 
-    $.getJSON("../songs.json",function(result){
+    $.getJSON("../songs.json", function(result) {
         songs = result.songs;
         tags = computeTags(songs);
-        
+
     });
 
-    $.getJSON("../categories.json",function(result){
+    $.getJSON("../categories.json", function(result) {
         categories = result;
-        
+
     });
 
 
 
-    $('#play-button, #play-button-ov').click(function(e){
+    $('#play-button, #play-button-ov').click(function(e) {
         if (playing) {
             //$(this).find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
             pause();
@@ -48,111 +48,114 @@ function initializePage() {
             play();
             playing = true;
         }
-                    });
+    });
 
-    $('#next-button, #next-button-ov').click(function(e){
+    $('#next-button, #next-button-ov').click(function(e) {
         e.preventDefault();
-        ga('create','UA-114584880-2','auto');
+        ga('create', 'UA-114584880-2', 'auto');
         ga('send', 'event', 'song', 'skip');
         playNextSong();
-                    });
+    });
 
-    $('#song-up').click(function(e){
+    $('#song-up').click(function(e) {
         openNav();
     });
 
-    $('#song-down').click(function(e){
+    $('#song-down').click(function(e) {
         closeNav();
     });
 
-    $('.emoji-button').click(function(e){
+    $('.emoji-button').click(function(e) {
         var category = $(e.target).find('.em-svg').addBack('.em-svg').attr('id');
         var parentdiv = document.getElementById($(e.target).closest('div').attr('id'));
         updateWheel(parentdiv, category);
     });
 
-    audioElement.addEventListener("timeupdate",function(){
-        $("#length").attr('style', "width:" + (audioElement.currentTime/currDuration)*100 + "%");
+    audioElement.addEventListener("timeupdate", function() {
+        $("#length").attr('style', "width:" + (audioElement.currentTime / currDuration) * 100 + "%");
     });
 
-    audioElement.addEventListener("canplay",function(){
+    audioElement.addEventListener("canplay", function() {
         currDuration = audioElement.duration;
     });
 
-		window.SetVolume = function(val)
-		{
-		    var player = audioElement;
-		    console.log('Before: ' + player.volume);
-		    player.volume = val / 100;
-		    console.log('After: ' + player.volume);
-		}
+    window.SetVolume = function(val) {
+        var player = audioElement;
+        console.log('Before: ' + player.volume);
+        player.volume = val / 100;
+        console.log('After: ' + player.volume);
+    }
 
-    $('.chips').on('chip.add', function(e, chip){
+    $('.chips').on('chip.add', function(e, chip) {
 
         //google analysis
         e.preventDefault();
-        ga('create','UA-114584880-2','auto');
+        ga('create', 'UA-114584880-2', 'auto');
         ga('send', 'event', 'filter', 'add');
 
-        if(!ignoreList.includes(chip.tag)){
+        if (!ignoreList.includes(chip.tag)) {
             ignoreList.push(chip.tag);
         }
-        if(!passesIgnore(current_song)){
+        if (!passesIgnore(current_song)) {
             playNextSong();
         }
     });
 
-    $('.chips').on('chip.delete', function(e, chip){
-        if(ignoreList.includes(chip.tag)){
+    $('.chips').on('chip.delete', function(e, chip) {
+        if (ignoreList.includes(chip.tag)) {
             let arrayInd = ignoreList.indexOf(chip.tag);
-            ignoreList.splice(arrayInd,1);
+            ignoreList.splice(arrayInd, 1);
             //console.log(ignoreList);
         }
     });
 
-    $('.chips-autocomplete').on('chip.select', function(e, chip){
-        
+    $('.chips-autocomplete').on('chip.select', function(e, chip) {
+
     });
 
     // for Page B alternate view
 
-    $('.chips-initial').on('chip.select', function(e, chip){
+    $('.chips-initial').on('chip.select', function(e, chip) {
 
         //google analysis
         e.preventDefault();
-        ga('create','UA-114584880-2','auto');
+        ga('create', 'UA-114584880-2', 'auto');
         ga('send', 'event', 'filter', 'add');
 
-        if(!ignoreList.includes(chip.tag)){
+        if (!ignoreList.includes(chip.tag)) {
             ignoreList.unshift(chip.tag);
         }
 
         var ignored_chips = [];
         //ignored_chips.push({"tag":chip.tag});
-        ignoreList.forEach(function(tag){
+        ignoreList.forEach(function(tag) {
             var newtag = {};
             newtag['tag'] = tag;
             ignored_chips.push(newtag);
         })
 
         $('.chips-autocomplete').material_chip({
-          data: ignored_chips
+            data: ignored_chips
         });
 
-        $(e.target).find('.chip.selected').animate({opacity:0},{complete: function(){
-            playNextSong();
-        }});
+        $(e.target).find('.chip.selected').animate({
+            opacity: 0
+        }, {
+            complete: function() {
+                playNextSong();
+            }
+        });
 
     });
     $('.chips-initial').keydown(function(e) {
-       e.preventDefault();
-       return false;
+        e.preventDefault();
+        return false;
     });
 
 
-   // $('#remember').prop('checked',true);
-    $('.close2').click(function(e){
-        if($("#remember").is(':checked')){
+    // $('#remember').prop('checked',true);
+    $('.close2').click(function(e) {
+        if ($("#remember").is(':checked')) {
             rememberedTags = ignoreList;
             console.log(rememberedTags);
         }
@@ -167,26 +170,26 @@ function initializePage() {
 
 function playNextSong() {
     var tag = current_category;
-	var len = songs.length;
+    var len = songs.length;
     //console.log("length: " + len);
-    var ran = Math.floor(Math.random()*len);
+    var ran = Math.floor(Math.random() * len);
     //console.log("random: " +ran);
     var flag = true;
     var counter = 0;
 
     // chance category
-    if(tag == "Chance"){
+    if (tag == "Chance") {
         tag = songs[ran].tags[0];
     }
 
-    while(ran == current_song || !matchesCategory(ran) || !passesIgnore(ran)){
-        ran = Math.floor(Math.random()*len);
-        if(current_category == "Chance"){
+    while (ran == current_song || !matchesCategory(ran) || !passesIgnore(ran)) {
+        ran = Math.floor(Math.random() * len);
+        if (current_category == "Chance") {
             tag = songs[ran].tags[0];
         }
 
         counter++;
-        if(counter > 200){ //catch for infinte loop
+        if (counter > 200) { //catch for infinte loop
             alert("no new songs! the song database is small now, try reducing your filters");
             break;
         }
@@ -205,7 +208,7 @@ function playNextSong() {
     }
 
     var chipTags = [];
-    songs[current_song].tags.forEach(function(tagg){
+    songs[current_song].tags.forEach(function(tagg) {
         var newtag = {};
         newtag['tag'] = tagg;
         chipTags.push(newtag);
@@ -213,22 +216,22 @@ function playNextSong() {
 
     // populate viewAlt chips per song
     $('.chips-initial').material_chip({
-      data: chipTags
+        data: chipTags
     });
 
 
     // new art (random)
-    $('#album-art').attr("src","http://lorempixel.com/315/315/abstract/");
+    $('#album-art').attr("src", "http://lorempixel.com/315/315/abstract/");
     $('#category_header').html(current_category);
     return;
 }
 
-function passesIgnore(ranNum){
+function passesIgnore(ranNum) {
     console.log(ignoreList);
-    for(let i = 0; i < ignoreList.length; i++){
-        if(ignoreList[i] != current_category){
+    for (let i = 0; i < ignoreList.length; i++) {
+        if (ignoreList[i] != current_category) {
             //console.log(ignoreList[i] + current_category);
-            if(songs[ranNum].tags.includes(ignoreList[i])){
+            if (songs[ranNum].tags.includes(ignoreList[i])) {
                 return false;
             }
         }
@@ -236,23 +239,23 @@ function passesIgnore(ranNum){
     return true;
 }
 
-function matchesCategory(ranNum){
+function matchesCategory(ranNum) {
     //console.log(current_category + " " + categories);
-    if(current_category == "Chance"){
+    if (current_category == "Chance") {
         return true;
     }
     var cat = categories[current_category];
     //console.log(cat);
-    for(let i = 0; i < cat.length; i++){
+    for (let i = 0; i < cat.length; i++) {
         //console.log(cat.length + current_category);
-        if(songs[ranNum].tags.includes(cat[i])){
+        if (songs[ranNum].tags.includes(cat[i])) {
             return true;
         }
     }
     return false;
 }
 
-function updateWheel(targetted, category){
+function updateWheel(targetted, category) {
     console.log('Category is: ' + category);
     // update the music information to new selection
     current_category = category;
@@ -260,7 +263,7 @@ function updateWheel(targetted, category){
 
     // swap out most recent category icon
     var middle = document.getElementById("project2");
-    swap(targetted,middle);
+    swap(targetted, middle);
 
 }
 
@@ -284,24 +287,32 @@ function pause() {
     console.log("Stopped...");
 }
 
-function swap(div1,div2){
-        var htmlOne = $(div1).html();
-        var htmlTwo = $(div2).html();
+function swap(div1, div2) {
+    var htmlOne = $(div1).html();
+    var htmlTwo = $(div2).html();
 
-        if(div1 != div2){
-            $(div1).animate({opacity:0},'fast');
-        }
-		$(div2).animate({opacity:0},'fast');
+    if (div1 != div2) {
+        $(div1).animate({
+            opacity: 0
+        }, 'fast');
+    }
+    $(div2).animate({
+        opacity: 0
+    }, 'fast');
 
-        if(div1 != div2){
-		    $(div1).empty().html(htmlTwo);
-            $(div2).empty().html(htmlOne);
-        }
+    if (div1 != div2) {
+        $(div1).empty().html(htmlTwo);
+        $(div2).empty().html(htmlOne);
+    }
 
-        if(div1 != div2){
-            $(div1).animate({opacity:1},'fast');
-        }
-		$(div2).animate({opacity:1},'fast');
+    if (div1 != div2) {
+        $(div1).animate({
+            opacity: 1
+        }, 'fast');
+    }
+    $(div2).animate({
+        opacity: 1
+    }, 'fast');
 }
 
 function openNav() {
@@ -315,26 +326,26 @@ function closeNav() {
 }
 
 
-function computeTags(songList){
+function computeTags(songList) {
     var tagList = {};
-    songList.forEach(function(element){
+    songList.forEach(function(element) {
 
-        element.tags.forEach(function(tag){
-            if(!(tag in tagList)){
+        element.tags.forEach(function(tag) {
+            if (!(tag in tagList)) {
                 tagList[tag] = null;
             }
         })
     })
     console.log(tagList);
-    
 
-  $('.chips-autocomplete').material_chip({
-    autocompleteOptions: {
-      data: tagList,
-      limit: 6,
-      minLength: 1
-    }
-  });
+
+    $('.chips-autocomplete').material_chip({
+        autocompleteOptions: {
+            data: tagList,
+            limit: 6,
+            minLength: 1
+        }
+    });
 
     return tagList;
 
