@@ -108,7 +108,7 @@
         "Slow",
         "Instrumental",
         "Study",
-        "Sleep",
+        "Sleep"
       ]
     },
     {
@@ -121,14 +121,14 @@
         "Slow",
         "Instrumental",
         "Study",
-        "Sleep",
+        "Sleep"
       ]
     },
     {
       "title": "Palms Read",
       "artist": "Protest the Hero",
-      "duration": "5:06",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "duration": "3:10",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Metalmania.mp3",
       "tags": [
         "Workout",
         "Happy",
@@ -153,6 +153,45 @@
         "Relax",
         "Thinking",
         "Love"
+      ]
+    },
+    {
+      "title": "NTM",
+      "artist": "Simplepu",
+      "duration": "0:41",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Parisian.mp3",
+      "tags": [
+        "Study",
+        "Relax",
+        "Thinking",
+        "Love",
+        "French",
+        "Instrumental"
+      ]
+    },
+    {
+      "title": "Bummin",
+      "artist": "BeachClown",
+      "duration": "3:12",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Bummin%20on%20Tremelo.mp3",
+      "tags": [
+        "Study",
+        "Relax",
+        "Thinking",
+        "Love",
+        "Slow"
+      ]
+    },
+    {
+      "title": "Ron",
+      "artist": "Daddy Dodger",
+      "duration": "3:15",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Wepa.mp3",
+      "tags": [
+        "Happy",
+        "Workout",
+        "Fast",
+        "Latin"
       ]
     },
     {
@@ -323,7 +362,7 @@
       "title": "Magnolia",
       "artist": "Playboi Carti",
       "duration": "3:01",
-      "source": "https://mp3goo.cloud/file/A1_aMQSrIetdt7NFpJh6avdJ7h4Cm-5qEkyxVH_Zw-g/Playboi%2BCarti%2B-%2BMagnolia.mp3",
+      "source": "http://talkmuziktv.com/wp-content/uploads/2017/04/Playboi_Carti_-_Magnolia_Talkmuzik.mp3",
       "tags": [
         "Happy",
         "Workout",
