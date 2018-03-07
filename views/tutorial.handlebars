@@ -79,6 +79,7 @@
          <a href="/"><button type="button" class="btn btn-login btn-block">Home</button></a>
          <a><button onclick="document.getElementById('login-pop').style.display='block'" type="button" style="background-color:#6f5697; border-color:##6f5697;" class="btn btn-login btn-block">Log In</button></a>
       </div>
+
       <div id="login-pop" class="modal">
          <div class="row animate">
             <div class="col-md-6 col-md-offset-3">
@@ -156,6 +157,12 @@
          </div>
       </div>
       <script src="https://code.jquery.com/jquery.js"></script>
+      {{#if popped}}
+         <script type="text/javascript">$('#login-pop').css({display:"block"});</script>
+      {{else}}
+         <script type="text/javascript"></script>
+      {{/if}}
+
       <script src="/js/bootstrap.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="/js/helper.js"></script>

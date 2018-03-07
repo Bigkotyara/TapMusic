@@ -5,6 +5,12 @@ $(document).ready(function() {
     initializePage();
 });
 
+$(window).bind("load", function() {
+    if(!loggedIn){
+        toolTippers();
+    }
+});
+var loggedIn;
 var audioElement = document.createElement('audio');
 var playing = false;
 var currDuration = 0;
@@ -169,6 +175,7 @@ function initializePage() {
 }
 
 function playNextSong() {
+    $('#song-title').css("opacity","1");
     var tag = current_category;
     var len = songs.length;
     //console.log("length: " + len);
@@ -257,7 +264,7 @@ function matchesCategory(ranNum) {
 
 function updateWheel(targetted, category) {
     console.log('Category is: ' + category);
-    // update the music information to new selection
+    // update the music dropdownMenuButtonrmation to new selection
     current_category = category;
     playNextSong();
 
@@ -316,7 +323,7 @@ function swap(div1, div2) {
 }
 
 function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.height = "92%";
     console.log("open overlay");
 }
 
@@ -348,5 +355,44 @@ function computeTags(songList) {
     });
 
     return tagList;
+
+}
+
+function toolTippers(){
+        $('#song-title').animate({color:"#ffef49",opacity:"1"},   {
+            duration: 1500,
+            complete: function(){
+                $('#song-title').animate({opacity:"0.3",color:"white"},{duration:1500,complete:part2});
+            }}
+        );
+
+    function part2(){
+        $('#song-up').fadeOut(600,function(){
+            $('#song-up').removeClass("glyphicon glyphicon-chevron-up");
+            $('#song-up').css("color","#ffef49");
+            $('#song-up').html("this raises the music player");
+            $('#song-up').fadeIn(1000);
+            $('#song-up').fadeOut(1200,function(){
+                $('#song-up').addClass("glyphicon glyphicon-chevron-up");
+                $('#song-up').css("color","white");
+                $('#song-up').html("");
+                $('#song-up').fadeIn(1000);
+            });
+        });
+    }
+    function part3(){
+        $('#dropdownMenuButton').fadeOut(600,function(){
+            $('#dropdownMenuButton').removeClass("glyphicon glyphicon-dropdownMenuButton-sign");
+            $('#dropdownMenuButton').css("color","#ffef49");
+            $('#dropdownMenuButton').html("more dropdownMenuButton");
+            $('#dropdownMenuButton').fadeIn(1000);
+            $('#dropdownMenuButton').fadeOut(1200,function(){
+                $('#dropdownMenuButton').addClass("glyphicon glyphicon-dropdownMenuButton-sign");
+                $('#dropdownMenuButton').css("color","#428bca");
+                $('#dropdownMenuButton').html("");
+                $('#dropdownMenuButton').fadeIn(1000);
+            });
+        });
+    }
 
 }
