@@ -14,6 +14,117 @@
       ]
     },
     {
+      "title": "Slow Rockabilly",
+      "artist": "Pelvis Presely",
+      "duration": "3:06",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Last%20Kiss%20Goodnight.mp3",
+      "tags": [
+        "Love",
+        "Slow",
+        "1950s",
+        "Guitar",
+        "Blues",
+        "American"
+      ]
+    },
+    {
+      "title": "Nerd is the Word",
+      "artist": "Sandy Cheeks",
+      "duration": "2:02",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Surf%20Shimmy.mp3",
+      "tags": [
+        "Happy",
+        "Relax",
+        "Rock",
+        "1950s",
+        "Guitar",
+        "Surf",
+        "American"
+      ]
+    },
+    {
+      "title": "Rock Over London",
+      "artist": "U-long",
+      "duration": "2:19",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Rock%20Over%20London.mp3",
+      "tags": [
+        "Happy",
+        "Rock",
+        "Guitar",
+        "Bass",
+        "British"
+      ]
+    },
+    {
+      "title": "Pineapple Express",
+      "artist": "Ska Man",
+      "duration": "3:14",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Upbeat%20Forever.mp3",
+      "tags": [
+        "Happy",
+        "Rock",
+        "Fast",
+        "Relax",
+        "Guitar",
+        "Bass",
+        "Ska"
+      ]
+    },
+    {
+      "title": "Jary Mane",
+      "artist": "Jick Rames",
+      "duration": "3:14",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Shaving%20Mirror.mp3",
+      "tags": [
+        "Happy",
+        "Funk",
+        "Slow",
+        "Relax",
+        "Bass",
+        "Study"
+      ]
+    },
+    {
+      "title": "Hotrock",
+      "artist": "Hair",
+      "duration": "3:24",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Last%20Kiss%20Goodnight.mp3",
+      "tags": [
+        "Workout",
+        "Metal",
+        "Guitar",
+        "Bass",
+        "British",
+        "Fast"
+      ]
+    },
+    {
+      "title": "The Gods Must B",
+      "artist": "Meerkat",
+      "duration": "1:50",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Night%20Cave.mp3",
+      "tags": [
+        "Relax",
+        "Slow",
+        "Instrumental",
+        "Study",
+        "Sleep",
+      ]
+    },
+    {
+      "title": "Tafi Maradi",
+      "artist": "Sheky Shek",
+      "duration": "2:39",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Tafi%20Maradi.mp3",
+      "tags": [
+        "Relax",
+        "Slow",
+        "Instrumental",
+        "Study",
+        "Sleep",
+      ]
+    },
+    {
       "title": "Palms Read",
       "artist": "Protest the Hero",
       "duration": "5:06",
@@ -212,8 +323,10 @@
       "title": "Magnolia",
       "artist": "Playboi Carti",
       "duration": "3:01",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "source": "https://mp3goo.cloud/file/A1_aMQSrIetdt7NFpJh6avdJ7h4Cm-5qEkyxVH_Zw-g/Playboi%2BCarti%2B-%2BMagnolia.mp3",
       "tags": [
+        "Happy",
+        "Workout",
         "Slow",
         "Meme",
         "Rap",
@@ -254,10 +367,10 @@
       ]
     },
     {
-      "title": "Piano Sonata in B Minor",
-      "artist": "Franz Joseph Hadyn",
-      "duration": "3:33",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "title": "Piano Sonata in C Minor",
+      "artist": "Some Old Dude",
+      "duration": "1:18",
+      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Sonatina.mp3",
       "tags": [
         "Classical",
         "Instrumental",
@@ -288,7 +401,7 @@
       "duration": "3:00",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Hip-Hop",
         "Party",
@@ -304,7 +417,7 @@
       "duration": "3:32",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Happy",
         "Profanity",
         "Hip-Hop",
@@ -318,7 +431,7 @@
       "duration": "3:11",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Hip-Hop",
@@ -333,7 +446,7 @@
       "duration": "3:07",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Sad",
         "Profanity",
         "Hip-Hop",
@@ -349,7 +462,7 @@
       "duration": "2:36",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Hip-Hop",
@@ -364,7 +477,7 @@
       "duration": "2:29",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Hip-Hop",
         "Party",
@@ -380,7 +493,7 @@
       "duration": "2:54",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Hip-Hop",
         "Fast",
@@ -395,7 +508,7 @@
       "duration": "3:02",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Sad",
         "Meme",
         "Relax",
@@ -411,7 +524,7 @@
       "duration": "3:03",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Relax",
         "Love",
         "Fast",
@@ -427,7 +540,7 @@
       "duration": "4:54",
       "source": "https://www.bensound.com/bensound-music/bensound-tomorrow.mp3",
       "tags": [
- 
+
         "Relax",
         "Love",
         "Slow",
@@ -442,7 +555,7 @@
       "duration": "3:58",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Hip-Hop",
@@ -457,7 +570,7 @@
       "duration": "1:45",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Happy",
@@ -470,7 +583,7 @@
       "duration": "1:44",
       "source": "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Happy",
@@ -483,7 +596,7 @@
       "duration": "2:49",
       "source": "https://www.bensound.com/bensound-music/bensound-littleidea.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Happy",
@@ -496,7 +609,7 @@
       "duration": "4:00",
       "source": "https://www.bensound.com/bensound-music/bensound-brazilsamba.mp3",
       "tags": [
- 
+
         "Workout",
         "Party",
         "Happy",
@@ -509,7 +622,7 @@
       "duration": "3:43",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Happy",
         "Love",
         "Party",
@@ -523,7 +636,7 @@
       "duration": "3:43",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
- 
+
         "Relax",
         "Hip-Hop",
         "Profanity",
