@@ -26,12 +26,12 @@ function onload() {
                                  });
   
   $('#login-submit').click(function(e) {
-                                 window.location.href = "/";
+                                 window.location.href = "/loggedIn";
                                  e.preventDefault();
                                  });
                                  
   $('#register-submit').click(function(e) {
-                                 window.location.href = "/";
+                                 window.location.href = "/loggedIn";
                                  e.preventDefault();
                                  });
                                  

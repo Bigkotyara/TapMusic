@@ -28,6 +28,10 @@
      margin-bottom: 0px;
 }
 
+.dropdown{
+  z-index: 1000;
+}
+
 .fixed-bottom {
      bottom: 0px;
      position: absolute;
@@ -80,7 +84,17 @@
 }
 
 #song-down{
-    font-size: 16px;
+    font-size: 10px;
+}
+
+#song-title{
+  opacity: 0.3;
+}
+
+#song-up{
+    font-size: 2em;
+    height: 6vh;
+    
 }
 
 .faded{
@@ -169,8 +183,8 @@
     height: 0%;
 
     position: fixed;
-	 display: inline-block;
-    z-index: 1;
+	   display: inline-block;
+    z-index: 0;
     bottom: 0;
     left: 0;
     background-color: rgb(69,69,69);
@@ -181,7 +195,6 @@
 .overlay-content {
     position: relative;
     top: 0%;
-		height: 100vh;
 		width: 100vw;
     text-align: center;
     margin-top: 0px;

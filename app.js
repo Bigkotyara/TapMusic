@@ -3,6 +3,8 @@
  * Module dependencies.
  */
 
+var areWeLoggedIn = false;
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -50,6 +52,8 @@ app.get('/help', help.view);
 app.get('/filter', filter.view);
 app.get('/player/:name', player.view);
 app.get('/tutorial', tutorial.view);
+app.get('/loggedIn', index.LoggedInLanding);
+app.get('/login', tutorial.loginView);
 // Example route
 // app.get('/users', user.list);
 

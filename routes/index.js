@@ -25,3 +25,9 @@ exports.viewB = function(req, res){
 	console.log("alternate view    ");
 	res.render('index', emojis);
 };
+
+exports.LoggedInLanding = function(req, res){
+	emojis["loggedIn"] = true;
+	return res.redirect('/');
+};
+
