@@ -17,7 +17,7 @@
       "title": "Slow Rockabilly",
       "artist": "Pelvis Presely",
       "duration": "3:06",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Last%20Kiss%20Goodnight.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Last%20Kiss%20Goodnight.mp3",
       "tags": [
         "Love",
         "Slow",
@@ -31,7 +31,7 @@
       "title": "Nerd is the Word",
       "artist": "Sandy Cheeks",
       "duration": "2:02",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Surf%20Shimmy.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Surf%20Shimmy.mp3",
       "tags": [
         "Happy",
         "Relax",
@@ -46,7 +46,7 @@
       "title": "Rock Over London",
       "artist": "U-long",
       "duration": "2:19",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Rock%20Over%20London.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Rock%20Over%20London.mp3",
       "tags": [
         "Happy",
         "Rock",
@@ -59,7 +59,7 @@
       "title": "Pineapple Express",
       "artist": "Ska Man",
       "duration": "3:14",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Upbeat%20Forever.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Upbeat%20Forever.mp3",
       "tags": [
         "Happy",
         "Rock",
@@ -74,7 +74,7 @@
       "title": "Jary Mane",
       "artist": "Jick Rames",
       "duration": "3:14",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Shaving%20Mirror.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Shaving%20Mirror.mp3",
       "tags": [
         "Happy",
         "Funk",
@@ -88,7 +88,7 @@
       "title": "Hotrock",
       "artist": "Hair",
       "duration": "3:24",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Last%20Kiss%20Goodnight.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hotrock.mp3",
       "tags": [
         "Workout",
         "Metal",
@@ -102,7 +102,7 @@
       "title": "The Gods Must B",
       "artist": "Meerkat",
       "duration": "1:50",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Night%20Cave.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Night%20Cave.mp3",
       "tags": [
         "Relax",
         "Slow",
@@ -115,7 +115,7 @@
       "title": "Tafi Maradi",
       "artist": "Sheky Shek",
       "duration": "2:39",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Tafi%20Maradi.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Tafi%20Maradi.mp3",
       "tags": [
         "Relax",
         "Slow",
@@ -128,7 +128,7 @@
       "title": "Palms Read",
       "artist": "Protest the Hero",
       "duration": "3:10",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Metalmania.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Metalmania.mp3",
       "tags": [
         "Workout",
         "Happy",
@@ -159,7 +159,7 @@
       "title": "NTM",
       "artist": "Simplepu",
       "duration": "0:41",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Parisian.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Parisian.mp3",
       "tags": [
         "Study",
         "Relax",
@@ -173,7 +173,7 @@
       "title": "Bummin",
       "artist": "BeachClown",
       "duration": "3:12",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Bummin%20on%20Tremelo.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Bummin%20on%20Tremelo.mp3",
       "tags": [
         "Study",
         "Relax",
@@ -186,12 +186,91 @@
       "title": "Ron",
       "artist": "Daddy Dodger",
       "duration": "3:15",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Wepa.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Wepa.mp3",
       "tags": [
         "Happy",
         "Workout",
         "Fast",
         "Latin"
+      ]
+    },
+    {
+      "title": "haHAA",
+      "artist": "Synthy",
+      "duration": "2:50",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Eighties%20Action.mp3",
+      "tags": [
+        "Relax",
+        "Slow",
+        "Rock",
+        "Workout"
+      ]
+    },
+    {
+      "title": "Futuredabs",
+      "artist": "Pookatori & Friends",
+      "duration": "4:07",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pookatori%20and%20Friends.mp3",
+      "tags": [
+        "Happy",
+        "Fast",
+        "Study",
+        "Electronic",
+        "Instrumental",
+        "Chiptune"
+      ]
+    },
+    {
+      "title": "Lucid Dreams",
+      "artist": "Dean Co.",
+      "duration": "4:00",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Chill%20Wave.mp3",
+      "tags": [
+        "Relax",
+        "Slow",
+        "Study",
+        "Bass",
+        "Instrumental"
+      ]
+    },
+    {
+      "title": "Culiacan",
+      "artist": "Chamaco",
+      "duration": "3:34",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Meanwhile%20in%20Bavaria.mp3",
+      "tags": [
+        "Relax",
+        "Happy",
+        "Slow",
+        "Study",
+        "Accordion",
+        "Instrumental"
+      ]
+    },
+    {
+      "title": "Off The Wall (feat. Ski Mask the Slump God)",
+      "artist": "XXXTentacion",
+      "duration": "3:23",
+      "source": "https://baseshare.com/uploads/songs/06272017/XXXTentacion%20ft.%20Ski%20Mask%20The%20Slump%20God%20-%20Off%20The%20Wall.mp3",
+      "tags": [
+        "Fast",
+        "Workout",
+        "Profanity",
+        "Rap",
+        "Clout"
+      ]
+    },
+    {
+      "title": "777 (feat. XXXTentacion)",
+      "artist": "Kid Trunks",
+      "duration": "3:00",
+      "source": "http://baseshare.com/uploads/songs/06272017/Kid%20Trunks%20ft.%20XXXTentacion%20-%20777.mp3",
+      "tags": [
+        "Slow",
+        "Sad",
+        "Profanity",
+        "Relax",
+        "Clout"
       ]
     },
     {
@@ -362,7 +441,7 @@
       "title": "Magnolia",
       "artist": "Playboi Carti",
       "duration": "3:01",
-      "source": "http://talkmuziktv.com/wp-content/uploads/2017/04/Playboi_Carti_-_Magnolia_Talkmuzik.mp3",
+      "source": "https://talkmuziktv.com/wp-content/uploads/2017/04/Playboi_Carti_-_Magnolia_Talkmuzik.mp3",
       "tags": [
         "Happy",
         "Workout",
@@ -375,10 +454,39 @@
       ]
     },
     {
-      "title": "Fall in Love",
-      "artist": "Phantogram",
-      "duration": "3:05",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "title": "Trap (feat. Migos)",
+      "artist": "Rich The Kid",
+      "duration": "4:41",
+      "source": "http://baseshare.com/uploads/zips/db798a8/98d4bfc.mp3",
+      "tags": [
+        "Workout",
+        "Slow",
+        "Rap",
+        "Lyrics",
+        "Explicit",
+        "2010s"
+      ]
+    },
+    {
+      "title": "Turn My Swag On",
+      "artist": "Soulja Boy",
+      "duration": "3:44",
+      "source": "https://a.tumblr.com/tumblr_ldp6l0zihG1qac0fpo1.mp3",
+      "tags": [
+        "Workout",
+        "Slow",
+        "Rap",
+        "Lyrics",
+        "Explicit",
+        "Happy",
+        "2000s"
+      ]
+    },
+    {
+      "title": "All in Love",
+      "artist": "Phantograms",
+      "duration": "2:56",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pulse%20Rock.mp3",
       "tags": [
         "Slow",
         "Alternative",
@@ -391,8 +499,8 @@
     {
       "title": "Soul Meets Body",
       "artist": "Death Cab for Cutie",
-      "duration": "3:49",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "duration": "2:19",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Gearhead.mp3",
       "tags": [
         "Rock",
         "Alternative",
@@ -409,7 +517,7 @@
       "title": "Piano Sonata in C Minor",
       "artist": "Some Old Dude",
       "duration": "1:18",
-      "source": "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Sonatina.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sonatina.mp3",
       "tags": [
         "Classical",
         "Instrumental",
@@ -435,13 +543,13 @@
       ]
     },
     {
-      "title": "Skateboard P",
-      "artist": "MadeinTYO",
-      "duration": "3:00",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "title": "Aw Yea (feat. Lil Yachty)",
+      "artist": "A$AP Ferg",
+      "duration": "3:15",
+      "source": "https://baseshare.com/uploads/songs/06132017/ASAP%20Ferg%20-%20A.mp3",
       "tags": [
-
         "Workout",
+        "Slow",
         "Hip-Hop",
         "Party",
         "Profanity",
@@ -499,9 +607,8 @@
       "title": "Rubbin Off The Paint",
       "artist": "YBN Nahmir",
       "duration": "2:36",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "source": "https://baseshare.com/uploads/songs/09192017/YBN%20Nahmir%20-%20Rubbin%20Off%20The%20Paint.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Hip-Hop",
@@ -511,12 +618,11 @@
       ]
     },
     {
-      "title": "Xanarchy",
-      "artist": "Lil Xan",
-      "duration": "2:29",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "title": "Trap House",
+      "artist": "Rich The Kid, 21 Savage",
+      "duration": "2:41",
+      "source": "https://baseshare.com/uploads/songs/04192016/02-Rich_The_Kid-Trap_House_Feat_21_Savage_Prod_By_Chris_Fresh_808_Mafia.mp3",
       "tags": [
-
         "Workout",
         "Hip-Hop",
         "Party",
@@ -545,9 +651,8 @@
       "title": "XO TOUR Llif3",
       "artist": "Lil Uzi Vert",
       "duration": "3:02",
-      "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+      "source": "https://baseshare.com/uploads/songs/02262017/Lil%20Uzi%20Vert%20-%20X.mp3",
       "tags": [
-
         "Sad",
         "Meme",
         "Relax",
@@ -635,10 +740,9 @@
       "duration": "2:49",
       "source": "https://www.bensound.com/bensound-music/bensound-littleidea.mp3",
       "tags": [
-
-        "Workout",
-        "Party",
         "Happy",
+        "Relax",
+        "Study",
         "Fast"
       ]
     },
