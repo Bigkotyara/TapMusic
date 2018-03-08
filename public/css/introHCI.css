@@ -4,6 +4,10 @@ body {
 	overflow: hidden;
 }
 
+#tap-logo{
+  height: 8vh;
+}
+
 .jumbotron {
 	height: 100%;
 	min-height: 100%;

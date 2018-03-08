@@ -323,7 +323,7 @@ function swap(div1, div2) {
 }
 
 function openNav() {
-    document.getElementById("myNav").style.height = "92%";
+    document.getElementById("myNav").style.height = "88%";
     console.log("open overlay");
 }
 
