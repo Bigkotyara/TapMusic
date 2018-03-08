@@ -370,7 +370,7 @@ function toolTippers(){
         $('#song-up').fadeOut(600,function(){
             $('#song-up').removeClass("glyphicon glyphicon-chevron-up");
             $('#song-up').css("color","#ffef49");
-            $('#song-up').html("this raises the music player");
+            $('#song-up').html("This raises the music player");
             $('#song-up').fadeIn(1000);
             $('#song-up').fadeOut(1200,function(){
                 $('#song-up').addClass("glyphicon glyphicon-chevron-up");
