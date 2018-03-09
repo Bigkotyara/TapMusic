@@ -16,8 +16,9 @@
     "express3-handlebars": "*",
     "materialize-autocomplete": "^1.0.7",
     "materialize-css": "^1.0.0-alpha.1",
-    "mongodb": "*",
-    "mongoose": "*"
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.9",
+    "npm": "^5.7.1"
   },
   "engines": {
     "node": "0.10.x"
