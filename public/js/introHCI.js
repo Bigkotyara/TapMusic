@@ -276,18 +276,30 @@ function updateWheel(targetted, category) {
 
 function play() {
     if (!playing) {
-        $('#play-button').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
-        $('#play-button-ov').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+        $('#play-button').find('i').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
         playing = true;
     }
-    audioElement.play();
+    //audioElement.play();
+    var playPromise = audioElement.play();
+ 
+      if (playPromise !== undefined) {
+        playPromise.then(_ => {
+          // Automatic playback started!
+          // Show playing UI.
+          // We can now safely pause video...
+          //audioElement.pause();
+        })
+        .catch(error => {
+          // Auto-play was prevented
+          // Show paused UI.
+        });
+      }
     console.log("Playing...");
 }
 
 function pause() {
     if (playing) {
-        $('#play-button').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
-        $('#play-button-ov').find('span').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
+        $('#play-button').find('i').toggleClass('glyphicon glyphicon-play').toggleClass('glyphicon glyphicon-pause');
         playing = false;
     }
     audioElement.pause();
