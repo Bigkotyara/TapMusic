@@ -21,6 +21,7 @@ function statusChangeCallback(response) {
 
 function changeUser(response) {
   $('#fb').hide();
+  $('#fbuser').text("Logged in as " + response.name);
   //$('.jumbotron h1').text(response.name);
   //$('#photo').attr('src', response.picture.data.url);
 }

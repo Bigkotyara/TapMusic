@@ -144,7 +144,7 @@ body {
 
 .topright {
     position: absolute;
-    top: 8px;
+    top: 16px;
     right: 16px;
     z-index: 1;
 }
@@ -1912,6 +1912,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     display: inline-block;
     color: #fff;
     position: relative;
+    bottom: 2vw;
     overflow: hidden;
     z-index: 1;
     width: 40px;
