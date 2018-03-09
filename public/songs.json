@@ -1,16 +1,32 @@
 { "songs" : [
     {
-      "title": "Such Small Hands",
-      "artist": "La Dispute",
-      "duration": "1:35",
-      "source": "https://static.mp3goo.com/file/eDSIevD796Or_KQmx3qGhOq9LGB9tmLRFhC1kbh1uLk/Nirvana%2B-%2BCome%2BAs%2BYou%2BAre.mp3",
+      "title": "Hurt",
+      "artist": "Johnny Cash",
+      "duration": "3:35",
+      "source": "https://mjcdn.cc/2/15673038/SHVydCAtIEpvaGhueSBDYXNoLm1wMw==",
       "tags": [
         "Sad",
         "Slow",
         "Build-up",
         "Emo",
-        "Poetry",
-        "Spoken-word"
+        "Guitar",
+        "Relax",
+        "American"
+      ]
+    },
+    {
+      "title": "Palm Trees",
+      "artist": "Flatbush Zombies",
+      "duration": "4:20",
+      "source": "https://mjcdn.cc/2/97278798/RmxhdGJ1c2ggWk9NQmlFUyAtIFBhbG0gVHJlZXMubXAz",
+      "tags": [
+        "Relax",
+        "Happy",
+        "Study",
+        "Slow",
+        "Hip-Hop",
+        "2010s",
+        "Profanity"
       ]
     },
     {
@@ -575,8 +591,8 @@
       "tags": [
         "Electronic",
         "Workout",
+        "Fast",
         "Happy",
-        "Up-beat",
         "Hip-Hop",
         "K-Pop"
       ]
@@ -609,6 +625,35 @@
         "Relax",
         "Study",
         "2000s"
+      ]
+    },
+    {
+      "title": "Gang Control",
+      "artist": "Leftover Crack",
+      "duration": "2:42",
+      "source": "https://mjcdn.cc/2/167354170/TGVmdMO2dmVyIENyYWNrLSBHYW5nIENvbnRyb2wubXAz",
+      "tags": [
+        "Rock",
+        "Fast",
+        "Workout",
+        "Angry",
+        "Lyrics",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Drugs You Should Try It",
+      "artist": "Travis Scott",
+      "duration": "3:29",
+      "source": "https://mjcdn.cc/2/163746368/MDQgRHJ1Z3MgWW91IFNob3VsZCBUcnkgSXQubXAz",
+      "tags": [
+        "Relax",
+        "Slow",
+        "Guitar",
+        "Lyrics",
+        "Hip-Hop",
+        "Study",
+        "2010s"
       ]
     },
     {
@@ -902,7 +947,6 @@
       "duration": "4:54",
       "source": "https://www.bensound.com/bensound-music/bensound-tomorrow.mp3",
       "tags": [
-
         "Relax",
         "Love",
         "Slow",
@@ -917,7 +961,6 @@
       "duration": "1:45",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Happy",
@@ -930,7 +973,6 @@
       "duration": "1:44",
       "source": "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Happy",
@@ -955,7 +997,6 @@
       "duration": "4:00",
       "source": "https://www.bensound.com/bensound-music/bensound-brazilsamba.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Happy",
@@ -1142,7 +1183,7 @@
     {
       "title": "Love",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "5:35",
       "source": "https://www.bensound.com/bensound-music/bensound-love.mp3",
       "tags": [
         "Piano",
@@ -1160,7 +1201,7 @@
     {
       "title": "Summer",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "3:37",
       "source": "https://www.bensound.com/bensound-music/bensound-summer.mp3",
       "tags": [
         "Chill",
@@ -1173,7 +1214,7 @@
     {
       "title": "The Lounge",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "4:16",
       "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
       "tags": [
         "Chill",
@@ -1189,7 +1230,7 @@
     {
       "title": "Ofelia's Dream",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "4:58",
       "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
       "tags": [
         "Soundtrack",
