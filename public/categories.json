@@ -1,7 +1,6 @@
-{ 
+{
   "Sad" : [
         "Sad",
-        "Slow",
         "Emo",
         "Poetry",
         "Spoken-word",
@@ -9,12 +8,13 @@
       ],
   "Happy" : [
         "Happy",
+        "Party",
         "Upbeat",
         "Joy",
         "Sweet"
       ],
  "Study" : [
-        "Sad",
+        "Relax",
         "Slow",
         "Study",
         "Calm",
@@ -40,6 +40,7 @@
       ],
 "Relax" : [
         "Relax",
+        "Slow",
         "Peaceful",
         "Calm",
         "Chill"
