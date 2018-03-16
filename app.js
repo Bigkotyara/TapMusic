@@ -11,11 +11,6 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var hello = require('./routes/hello');
-var project = require('./routes/project');
-var help = require('./routes/help');
-var filter = require('./routes/filter');
-var player = require('./routes/player');
 var tutorial = require('./routes/tutorial');
 // Example route
 // var user = require('./routes/user');
@@ -47,10 +42,6 @@ app.get('/', index.view);
 app.get('/viewAlt', index.viewAlt);
 app.get('/page_A', index.viewA);
 app.get('/page_B', index.viewB);
-app.get('/hello', hello.view);
-app.get('/help', help.view);
-app.get('/filter', filter.view);
-app.get('/player/:name', player.view);
 app.get('/tutorial', tutorial.view);
 app.get('/loggedIn', index.LoggedInLanding);
 app.get('/login', tutorial.loginView);
