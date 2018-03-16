@@ -87,9 +87,9 @@ function initializePage() {
 
     window.SetVolume = function(val) {
         var player = audioElement;
-        console.log('Before: ' + player.volume);
+        //console.log('Before: ' + player.volume);
         player.volume = val / 100;
-        console.log('After: ' + player.volume);
+        //console.log('After: ' + player.volume);
     }
 
     $('.chips').on('chip.add', function(e, chip) {
@@ -163,7 +163,7 @@ function initializePage() {
     $('.close2').click(function(e) {
         if ($("#remember").is(':checked')) {
             rememberedTags = ignoreList;
-            console.log(rememberedTags);
+            //console.log(rememberedTags);
         }
 
     });
@@ -234,7 +234,7 @@ function playNextSong() {
 }
 
 function passesIgnore(ranNum) {
-    console.log(ignoreList);
+    //console.log(ignoreList);
     for (let i = 0; i < ignoreList.length; i++) {
         if (ignoreList[i] != current_category) {
             //console.log(ignoreList[i] + current_category);
@@ -263,7 +263,7 @@ function matchesCategory(ranNum) {
 }
 
 function updateWheel(targetted, category) {
-    console.log('Category is: ' + category);
+    //console.log('Category is: ' + category);
     // update the music dropdownMenuButtonrmation to new selection
     current_category = category;
     playNextSong();
@@ -294,7 +294,7 @@ function play() {
           // Show paused UI.
         });
       }
-    console.log("Playing...");
+    //console.log("Playing...");
 }
 
 function pause() {
@@ -303,7 +303,7 @@ function pause() {
         playing = false;
     }
     audioElement.pause();
-    console.log("Stopped...");
+    //console.log("Stopped...");
 }
 
 function swap(div1, div2) {
@@ -336,12 +336,12 @@ function swap(div1, div2) {
 
 function openNav() {
     document.getElementById("myNav").style.height = "88%";
-    console.log("open overlay");
+    //console.log("open overlay");
 }
 
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
-    console.log("close overlay");
+    //console.log("close overlay");
 }
 
 
@@ -355,7 +355,7 @@ function computeTags(songList) {
             }
         })
     })
-    console.log(tagList);
+    //console.log(tagList);
 
 
     $('.chips-autocomplete').material_chip({

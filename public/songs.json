@@ -1,16 +1,32 @@
 { "songs" : [
     {
-      "title": "Such Small Hands",
-      "artist": "La Dispute",
-      "duration": "1:35",
-      "source": "https://static.mp3goo.com/file/eDSIevD796Or_KQmx3qGhOq9LGB9tmLRFhC1kbh1uLk/Nirvana%2B-%2BCome%2BAs%2BYou%2BAre.mp3",
+      "title": "Hurt",
+      "artist": "Johnny Cash",
+      "duration": "3:35",
+      "source": "https://mjcdn.cc/2/15673038/SHVydCAtIEpvaGhueSBDYXNoLm1wMw==",
       "tags": [
         "Sad",
         "Slow",
         "Build-up",
         "Emo",
-        "Poetry",
-        "Spoken-word"
+        "Guitar",
+        "Relax",
+        "American"
+      ]
+    },
+    {
+      "title": "Palm Trees",
+      "artist": "Flatbush Zombies",
+      "duration": "4:20",
+      "source": "https://mjcdn.cc/2/97278798/RmxhdGJ1c2ggWk9NQmlFUyAtIFBhbG0gVHJlZXMubXAz",
+      "tags": [
+        "Relax",
+        "Happy",
+        "Study",
+        "Slow",
+        "Hip-Hop",
+        "2010s",
+        "Profanity"
       ]
     },
     {
@@ -146,7 +162,7 @@
       ]
     },
     {
-      "title": "4tspoon (feat. PLayboi Carti)",
+      "title": "4tspoon (feat. Playboi Carti)",
       "artist": "Yung Bans",
       "duration": "2:53",
       "source": "https://mjcdn.cc/2/206482200/NHRzcG9vbiBmdC4gUGxheWJvaSBDYXJ0aS5tcDM=",
@@ -522,6 +538,50 @@
       ]
     },
     {
+      "title": "Malditas Ganas",
+      "artist": "El Komander",
+      "duration": "2:36",
+      "source": "https://mjcdn.cc/2/181700242/RWwgS29tYW5kZXIgLy8gTWFsZGl0YXMgR2FuYXMgKDIwMTUpLm1wMw==",
+      "tags": [
+        "Love",
+        "Slow",
+        "Party",
+        "Sad",
+        "Latino",
+        "2010s",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "Lunes-Viernes",
+      "artist": "Farruko",
+      "duration": "3:24",
+      "source": "https://mjcdn.cc/2/341330458/RmFycnVrbyAtIEx1bmVzIEEgVmllcm5lcy5tcDM=",
+      "tags": [
+        "Love",
+        "Relax",
+        "Slow",
+        "Party",
+        "Latino",
+        "2010s",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "Santeria",
+      "artist": "Sublime",
+      "duration": "3:10",
+      "source": "https://mjcdn.cc/2/17417651/U2FudGVyaWEubXAz",
+      "tags": [
+        "Happy",
+        "Relax",
+        "Love",
+        "Slow",
+        "1990s",
+        "Lyrics"
+      ]
+    },
+    {
       "title": "Magnolia",
       "artist": "Playboi Carti",
       "duration": "3:01",
@@ -538,6 +598,77 @@
       ]
     },
     {
+      "title": "Ounces",
+      "artist": "Migos",
+      "duration": "4:18",
+      "source": "https://mjcdn.cc/2/125145330/TWlnb3MtIE91bmNlcyBbUHJvZC4gQnkgWmF5dG92ZW4gJiBNZXRybyBCb29taW5dLm1wMw==",
+      "tags": [
+        "Happy",
+        "Workout",
+        "Hip-Hop",
+        "Lyrics",
+        "Profanity",
+        "2010s"
+      ]
+    },
+    {
+      "title": "Rather Be",
+      "artist": "2Pac",
+      "duration": "4:16",
+      "source": "https://mjcdn.cc/2/155326888/UmF0aGVyIEJlIFlhIE5pZ2dhLm1wMw==",
+      "tags": [
+        "Happy",
+        "Love",
+        "Slow",
+        "Relax",
+        "Hip-Hop",
+        "Lyrics",
+        "Profanity",
+        "1990s"
+      ]
+    },
+    {
+      "title": "Jefe",
+      "artist": "Boombox Cartel",
+      "duration": "3:00",
+      "source": "https://mjcdn.cc/2/310200681/SmVmZS5tcDM=",
+      "tags": [
+        "Workout",
+        "Party",
+        "Fast",
+        "Electronic",
+        "2010s"
+      ]
+    },
+    {
+      "title": "Geisha",
+      "artist": "Ghastly",
+      "duration": "3:37",
+      "source": "https://mjcdn.cc/2/345042725/R2hhc3RseSAtIEdlaXNoYS5tcDM=",
+      "tags": [
+        "Workout",
+        "Party",
+        "Fast",
+        "Electronic",
+        "2010s"
+      ]
+    },
+    {
+      "title": "Yeah Yeah (feat. Young Thug)",
+      "artist": "Travis Scott",
+      "duration": "4:30",
+      "source": "https://mjcdn.cc/2/339769768/VHJhdmlzIFNjb3R0IC0gWWVhaCBZZWFoIEZlYXQuIFlvdW5nIFRodWcubXAz",
+      "tags": [
+        "Love",
+        "Relax",
+        "Slow",
+        "Hip-Hop",
+        "Lyrics",
+        "Profanity",
+        "2010s"
+      ]
+    },
+    {
       "title": "Trap (feat. Migos)",
       "artist": "Rich The Kid",
       "duration": "4:41",
@@ -549,6 +680,37 @@
         "Clout",
         "Lyrics",
         "Explicit",
+        "2010s"
+      ]
+    },
+    {
+      "title": "I'm Sippin' Tea in Your Hood",
+      "artist": "XXXTentacion",
+      "duration": "2:54",
+      "source": "https://mjcdn.cc/2/303725844/eHh4dGVudGFjaW9uIC0gaW0gc2lwcGluJyB0ZWEgaW4geW8gaG9vZC5tcDM=",
+      "tags": [
+        "Workout",
+        "Fast",
+        "Rap",
+        "Clout",
+        "Angry",
+        "Lyrics",
+        "Explicit",
+        "2010s"
+      ]
+    },
+    {
+      "title": "Blue or Red",
+      "artist": "Waka Flocka Flame",
+      "duration": "3:25",
+      "source": "https://mjcdn.cc/2/232760906/V2FrYSBGbG9ja2EgLSBCbHVlIG9yIFJlZCAoUHJvZC4gQnkgU291dGhzaWRlICYgTWV0cm8gQm9vbWluKS5tcDM=",
+      "tags": [
+        "Workout",
+        "Angry",
+        "Rap",
+        "Clout",
+        "Lyrics",
+        "Profanity",
         "2010s"
       ]
     },
@@ -575,8 +737,8 @@
       "tags": [
         "Electronic",
         "Workout",
+        "Fast",
         "Happy",
-        "Up-beat",
         "Hip-Hop",
         "K-Pop"
       ]
@@ -596,6 +758,20 @@
       ]
     },
     {
+      "title": "drink i'm sippin' on",
+      "artist": "yaeji",
+      "duration": "3:14",
+      "source": "https://mjcdn.cc/2/345013964/WWFlamkgLSBEcmluayBJbSBTaXBwaW4gT24ubXAz",
+      "tags": [
+        "Relax",
+        "Alternative",
+        "Slow",
+        "Lyrics",
+        "Xanax",
+        "2010s"
+      ]
+    },
+    {
       "title": "Soul Meets Body",
       "artist": "Death Cab for Cutie",
       "duration": "2:19",
@@ -609,6 +785,35 @@
         "Relax",
         "Study",
         "2000s"
+      ]
+    },
+    {
+      "title": "Gang Control",
+      "artist": "Leftover Crack",
+      "duration": "2:42",
+      "source": "https://mjcdn.cc/2/167354170/TGVmdMO2dmVyIENyYWNrLSBHYW5nIENvbnRyb2wubXAz",
+      "tags": [
+        "Rock",
+        "Fast",
+        "Workout",
+        "Angry",
+        "Lyrics",
+        "2000s"
+      ]
+    },
+    {
+      "title": "Drugs You Should Try It",
+      "artist": "Travis Scott",
+      "duration": "3:29",
+      "source": "https://mjcdn.cc/2/163746368/MDQgRHJ1Z3MgWW91IFNob3VsZCBUcnkgSXQubXAz",
+      "tags": [
+        "Relax",
+        "Slow",
+        "Guitar",
+        "Lyrics",
+        "Hip-Hop",
+        "Study",
+        "2010s"
       ]
     },
     {
@@ -902,7 +1107,6 @@
       "duration": "4:54",
       "source": "https://www.bensound.com/bensound-music/bensound-tomorrow.mp3",
       "tags": [
-
         "Relax",
         "Love",
         "Slow",
@@ -917,7 +1121,6 @@
       "duration": "1:45",
       "source": "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Happy",
@@ -930,7 +1133,6 @@
       "duration": "1:44",
       "source": "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Happy",
@@ -955,7 +1157,6 @@
       "duration": "4:00",
       "source": "https://www.bensound.com/bensound-music/bensound-brazilsamba.mp3",
       "tags": [
-
         "Workout",
         "Party",
         "Happy",
@@ -978,10 +1179,40 @@
       ]
     },
     {
-      "title": "Let It Go",
-      "artist": "Playboi Carti",
-      "duration": "2:30",
-      "source": "http://albumlord.com/wp-content/uploads/2017/07/05.-Let-It-Go.mp3",
+      "title": "Skateboard P Remix (feat. Big Sean)",
+      "artist": "MadeinTYO",
+      "duration": "4:01",
+      "source": "https://mjcdn.cc/2/291549500/U0tBVEVCT0FSRCBQIChSRU1JWCkgRlQuIEJJRyBTRUFOLm1wMw==",
+      "tags": [
+        "Workout",
+        "Fast",
+        "Happy",
+        "Party",
+        "Clout",
+        "2010s",
+        "Profanity",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "Don Fransisco Remix (feat. French Montana)",
+      "artist": "Bodega Bamz",
+      "duration": "2:29",
+      "source": "https://mjcdn.cc/2/128433271/Qm9kZWdhIEJhbXogLSBEb24gRnJhbmNpc2NvIChSZW1peCkgRnQuIEZyZW5jaCBNb250YW5hLm1wMw==",
+      "tags": [
+        "Workout",
+        "Fast",
+        "Happy",
+        "Party",
+        "2010s",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "Nuthin But A G Thang (feat. Snoop Dogg)",
+      "artist": "Dr. Dre",
+      "duration": "3:57",
+      "source": "https://mjcdn.cc/2/244744416/RHIuIERyZSBGdC4gU25vb3AgRG9nZyAtIE51dGhpbicgQnV0IEEgJ0cnIFRoYW5nLm1wMw==",
       "tags": [
         "Relax",
         "Study",
@@ -989,7 +1220,54 @@
         "Party",
         "Clout",
         "2010s",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "Breathe (feat. Bones)",
+      "artist": "Bones",
+      "duration": "2:46",
+      "source": "https://mjcdn.cc/2/216319906/Qm9uZXMgLSBCcmVhdGhlIChGZWF0LiBQb3V5YSkubXAz",
+      "tags": [
+        "Relax",
+        "Study",
+        "Hip-Hop",
+        "Party",
+        "Clout",
         "Profanity",
+        "2010s",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "$OUTH $IDE $UICIDE (feat. Pouya)",
+      "artist": "$uicideboy$",
+      "duration": "2:49",
+      "source": "https://mjcdn.cc/2/208198134/JFVJQ0lERUJPWSQgeCBQT1VZQSAtICRPVVRIICRJREUgJFVJQ0lERS5tcDM=",
+      "tags": [
+        "Relax",
+        "Sad",
+        "Study",
+        "Hip-Hop",
+        "Party",
+        "Clout",
+        "Profanity",
+        "2010s",
+        "Lyrics"
+      ]
+    },
+    {
+      "title": "Grey Gods (feat. $uicideboy$)",
+      "artist": "Ramirez",
+      "duration": "3:12",
+      "source": "https://mjcdn.cc/2/327380103/R3JleSBHb2RzIChGZWF0ICR1aWNpZGVib3kkKSBbUHJvZC5CeSBUYWNldF0ubXAz",
+      "tags": [
+        "Workout",
+        "Fast",
+        "Hip-Hop",
+        "Party",
+        "Profanity",
+        "2010s",
         "Lyrics"
       ]
     },
@@ -1001,6 +1279,7 @@
       "tags": [
         "Workout",
         "Hip-Hop",
+        "Happy",
         "Party",
         "Clout",
         "2010s",
@@ -1008,7 +1287,22 @@
         "Lyrics"
       ]
     },
-
+    {
+      "title": "Shinigami (feat. Bodega Bamz)",
+      "artist": "Tekashi69",
+      "duration": "3:11",
+      "source": "https://mjcdn.cc/2/191816975/NklYOUlORSBGdC4gQm9kZWdhIEJhbXogLSBTaGluaWdhbWkgKFByb2QuIEJ5IEpvcmRhbiBHcmFuYWRvcyAmIE1hbm55IE1vbmV5KS5tcDM=",
+      "tags": [
+        "Workout",
+        "Angry",
+        "Hip-Hop",
+        "Party",
+        "Clout",
+        "2010s",
+        "Profanity",
+        "Lyrics"
+      ]
+    },
     {
       "title": "Toot It & Boot It",
       "artist": "YG",
@@ -1142,7 +1436,7 @@
     {
       "title": "Love",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "5:35",
       "source": "https://www.bensound.com/bensound-music/bensound-love.mp3",
       "tags": [
         "Piano",
@@ -1160,7 +1454,7 @@
     {
       "title": "Summer",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "3:37",
       "source": "https://www.bensound.com/bensound-music/bensound-summer.mp3",
       "tags": [
         "Chill",
@@ -1173,7 +1467,7 @@
     {
       "title": "The Lounge",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "4:16",
       "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
       "tags": [
         "Chill",
@@ -1189,7 +1483,7 @@
     {
       "title": "Ofelia's Dream",
       "artist": "Bensound",
-      "duration": "2:26",
+      "duration": "4:58",
       "source": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
       "tags": [
         "Soundtrack",
