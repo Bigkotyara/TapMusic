@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
    <head>
-      <title>TapMusic</title>
+      <title>TapMusic Tutorial</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
          <h3>TapMusic</h3>
       </div>
       </br>
-      <div id="div1">
+      <div id="div1" id="fbuser">
          <h1 align="center">Welcome!</h1>
          <br>
          <div id="moodbutton" class="project">
@@ -43,7 +43,9 @@
          </a>
          <h2>Music matching your mood will begin to play!</h2>
          <div  align="center">
+
             <button id="nextbutton" type="button" style="background-color:#4CAF50; font-size:20px;" class="btn btn-login">&nbspNext&nbsp</button>
+
          </div>
       </div>
       <div id="div3" align="center">
@@ -84,7 +86,7 @@
          <div class="row animate">
             <div class="col-md-6 col-md-offset-3">
                <div class="panel panel-login">
-                  <span onclick="document.getElementById('login-pop').style.display='none'" class="close2" title="Close Modal">&times;</span>
+
                   <div class="panel-heading">
                      <div class="row">
                         <div class="col-xs-6">
@@ -93,6 +95,7 @@
                         <div class="col-xs-6">
                            <a href="#" id="register-form-link">Register</a>
                         </div>
+                     <span onclick="document.getElementById('login-pop').style.display='none'" class="close2" title="Close Modal">&times;</span>
                      </div>
                      <hr>
                   </div>
@@ -108,7 +111,7 @@
                               </div>
                               <div class="form-group text-center">
                                  <fb:login-button id="fb" scope="public_profile,email" onlogin="checkLoginState();">
-                                 </fb:login-button><h3 id="fbuser"></h3>
+                                 </fb:login-button>
                                  <p for="remember">Remember Me <input type="checkbox" tabindex="3" class="" name="remember" id="remember"></p>
                               </div>
                               <div class="form-group">
