@@ -30,7 +30,6 @@ var rememberedTags;
 function initializePage() {
 
     // add any functionality and listeners you want here
-
     $.getJSON("../songs.json", function(result) {
         songs = result.songs;
         tags = computeTags(songs);
@@ -407,4 +406,12 @@ function toolTippers(){
         });
     }
 
+}
+
+var modal = document.getElementById('login-pop');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
 }
