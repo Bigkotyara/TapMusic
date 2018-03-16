@@ -270,6 +270,7 @@ function updateWheel(targetted, category) {
     // swap out most recent category icon
     var middle = document.getElementById("project2");
     swap(targetted, middle);
+    openNav();
 
 }
 

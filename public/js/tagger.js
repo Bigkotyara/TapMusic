@@ -36,6 +36,6 @@ $('#add-tag').click(function(e) {
         //alert('You pressed enter! ' + t.value);
         //$("<p>Test"+$('#tags').val()+"</p>").insertAfter($('.login-form'));
         ignoreList.push($('#tags').val());
-        console.log(ignoreList);
+        //console.log(ignoreList);
         $("#tags-stored").append("<p>"+$('#tags').val()+"</p>");
 });
